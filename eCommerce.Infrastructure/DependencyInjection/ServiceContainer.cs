@@ -40,6 +40,8 @@ namespace eCommerce.Infrastructure.DependencyInjection
             services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
             //register app logger service
             services.AddScoped(typeof(IAppLogger<>), typeof(SerilogLoggerAdapter<>));
+            //register unit of work for dependency injection
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
         //extension method for IApplicationBuilder to use global exception handling middleware 

@@ -1,0 +1,7 @@
+2025-12-21 16:11:00.863 +02:00 [INF] Application is starting...
+2025-12-21 16:11:02.017 +02:00 [INF] Application is running.
+2025-12-21 16:11:02.349 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 16:11:02.355 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 16:11:02.399 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 16:11:02.402 +02:00 [INF] Hosting environment: Development
+2025-12-21 16:11:02.404 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host

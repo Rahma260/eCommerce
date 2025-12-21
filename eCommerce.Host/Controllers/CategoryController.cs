@@ -10,7 +10,7 @@ namespace eCommerce.Presentation.Controllers
     [ApiController]
     //private readonly + send in constructor 
     //or send as a parameter in controller signature(primary constructor) (C# 12.0 feature)
-    public class CategoryController(ICategoryService CategoryService, ILogger<CategoryController> logger) : ControllerBase
+    public class CategoryController(ICategoryService CategoryService) : ControllerBase
     {
         [HttpGet("all")]
         public async Task<IActionResult> GetAll()

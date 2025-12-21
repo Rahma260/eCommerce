@@ -7,13 +7,13 @@ using eCommerce.Domain.Interfaces;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class ProductService(IGenericRepository<Product> productInterface, IMapper mapper) : IProductService
+    public class ProductService(IUnitOfWork unitOfWork, IMapper mapper) : IProductService
     {
         public async Task<ServiceResponse> AddAsync(CreateProductDto entity)
         {
 
             var mappedDate = mapper.Map<Product>(entity);
-            int result = await productInterface.AddAsync(mappedDate);
+            int result = await unitOfWork.Products.AddAsync(mappedDate);
             if (result > 0)
                 return new ServiceResponse(true, "Product added successfully");
             return new ServiceResponse(false, "Product failed to be added.");
@@ -21,7 +21,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            int result = await productInterface.DeleteAsync(id);
+            int result = await unitOfWork.Products.DeleteAsync(id);
             if (result > 0)
                 return new ServiceResponse(true, "Product deleted successfully");
             //it is perefered not to specify the exact reason for security
@@ -30,7 +30,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<IEnumerable<ProductBaseDto>> GetAllAsync()
         {
-            var rawData = await productInterface.GetAllAsync();
+            var rawData = await unitOfWork.Products.GetAllAsync();
             //map the (destination)result(product) to (source)ProductBaseDto
             if(!rawData.Any())
                 //return empty list [] if there is no products
@@ -42,7 +42,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<GetProductDto?> GetByIdAsync(int id)
         {
-            var rawData = await productInterface.GetByIdAsync(id);
+            var rawData = await unitOfWork.Products.GetByIdAsync(id);
             if(rawData == null)
                 return null;
             return mapper.Map<GetProductDto>(rawData);
@@ -52,7 +52,7 @@ namespace eCommerce.Application.Services.Implementations
         {
             //mapping the source entity to destination product
             var mappedDate = mapper.Map<Product>(entity);
-            int result = await productInterface.UpdateAsync(mappedDate);
+            int result = await unitOfWork.Products.UpdateAsync(mappedDate);
             if (result > 0)
                 return new ServiceResponse(true, "Product updated successfully");
             return new ServiceResponse(false, "Product failed to be updated.");

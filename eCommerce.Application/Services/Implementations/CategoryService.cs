@@ -8,13 +8,13 @@ using eCommerce.Domain.Interfaces;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class CategoryService(IGenericRepository<Category> CategoryInterface, IMapper mapper) : ICategoryService
+    public class CategoryService(IUnitOfWork unitOfWork, IMapper mapper) : ICategoryService
     {
         public async Task<ServiceResponse> AddAsync(CreateCategoryDto entity)
         {
 
             var mappedDate = mapper.Map<Category>(entity);
-            int result = await CategoryInterface.AddAsync(mappedDate);
+            int result = await unitOfWork.Categories.AddAsync(mappedDate);
             if (result > 0)
                 return new ServiceResponse(true, "Category added successfully");
             return new ServiceResponse(false, "Category failed to be added.");
@@ -22,7 +22,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            int result = await CategoryInterface.DeleteAsync(id);
+            int result = await unitOfWork.Categories.DeleteAsync(id);
             if (result > 0)
                 return new ServiceResponse(true, "Category deleted successfully");
             //it is perefered not to specify the exact reason for security
@@ -31,7 +31,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<IEnumerable<CategoryBaseDto>> GetAllAsync()
         {
-            var rawData = await CategoryInterface.GetAllAsync();
+            var rawData = await unitOfWork.Categories.GetAllAsync();
             //map the (destination)result(Category) to (source)CategoryBaseDto
             if (!rawData.Any())
                 //return empty list if there is no Categorys
@@ -43,7 +43,7 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<GetCategoryDto?> GetByIdAsync(int id)
         {
-            var rawData = await CategoryInterface.GetByIdAsync(id);
+            var rawData = await unitOfWork.Categories.GetByIdAsync(id);
             if (rawData == null)
                 return null;
             return mapper.Map<GetCategoryDto>(rawData);
@@ -53,7 +53,7 @@ namespace eCommerce.Application.Services.Implementations
         {
             //mapping the source entity to destination Category
             var mappedDate = mapper.Map<Category>(entity);
-            int result = await CategoryInterface.UpdateAsync(mappedDate);
+            int result = await unitOfWork.Categories.UpdateAsync(mappedDate);
             if (result > 0)
                 return new ServiceResponse(true, "Category updated successfully");
             return new ServiceResponse(false, "Category failed to be updated.");
