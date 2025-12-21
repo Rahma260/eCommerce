@@ -16,7 +16,7 @@ namespace eCommerce.Presentation.Controllers
         public async Task<IActionResult> GetAll()
         {
             var data = await CategoryService.GetAllAsync();
-            return data.Any() ? Ok(data) : NotFound(new { message = "there is no found data" });
+            return Ok(data);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -28,16 +28,17 @@ namespace eCommerce.Presentation.Controllers
         public async Task<IActionResult> Add(CreateCategoryDto Category)
         {
             //to ensure that the model sent by user is applying all required rules in dtos(data annotation)
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            //if (!ModelState.IsValid)
+            //    return BadRequest(ModelState);
             var result = await CategoryService.AddAsync(Category);
             return result.success ? Ok(result) : StatusCode(500, new { message = "adding Category failed" });
         }
         [HttpPut("update")]
         public async Task<IActionResult> Update(UpdateCategoryDto Category)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            //after applying fluent validation we don't need model state validation as fluent validation will handle it
+            //if (!ModelState.IsValid)
+            //    return BadRequest(ModelState);
             var result = await CategoryService.UpdateAsync(Category);
             return result.success ? Ok(result) : StatusCode(500, new { message = "updating Category failoed" });
         }

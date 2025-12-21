@@ -5,3 +5,569 @@
 2025-12-21 16:11:02.399 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-12-21 16:11:02.402 +02:00 [INF] Hosting environment: Development
 2025-12-21 16:11:02.404 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 16:11:26.031 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 16:11:26.327 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 81.6577 ms
+2025-12-21 16:11:26.341 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 16:11:26.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 312.9632ms
+2025-12-21 16:11:26.341 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 16:11:26.358 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 16.8412ms
+2025-12-21 16:11:26.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.6916ms
+2025-12-21 16:11:26.642 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 16:11:26.662 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.2335 ms
+2025-12-21 16:11:26.668 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.4061ms
+2025-12-21 16:11:29.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 16:11:29.821 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 16:11:29.852 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:11:31.392 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 16:11:32.648 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-12-21 16:11:32.702 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.GetCategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-21 16:11:32.726 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 2866.9353ms
+2025-12-21 16:11:32.728 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 16:11:32.729 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 3210.3790 ms
+2025-12-21 16:11:32.739 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 200 null application/json; charset=utf-8 3229.1735ms
+2025-12-21 16:11:40.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/2 - null null
+2025-12-21 16:11:40.431 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation)'
+2025-12-21 16:11:40.452 +02:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:11:40.742 +02:00 [INF] Executed DbCommand (104ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-12-21 16:11:40.794 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Category.GetCategoryDto'.
+2025-12-21 16:11:40.798 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation) in 343.3971ms
+2025-12-21 16:11:40.801 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation)'
+2025-12-21 16:11:40.802 +02:00 [INF] HTTP GET /api/Category/2 responded 200 in 371.8991 ms
+2025-12-21 16:11:40.804 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/2 - 200 null application/json; charset=utf-8 385.9481ms
+2025-12-21 16:11:45.595 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Category/add - application/json 22
+2025-12-21 16:11:45.603 +02:00 [INF] CORS policy execution successful.
+2025-12-21 16:11:45.605 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 16:11:45.612 +02:00 [INF] Route matched with {action = "Add", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Category.CreateCategoryDto) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:11:45.903 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-12-21 16:11:45.936 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-21 16:11:45.942 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation) in 326.2942ms
+2025-12-21 16:11:45.944 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 16:11:45.944 +02:00 [INF] HTTP POST /api/Category/add responded 200 in 339.6797 ms
+2025-12-21 16:11:45.946 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Category/add - 200 null application/json; charset=utf-8 351.477ms
+2025-12-21 16:11:56.275 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Category/update - application/json 33
+2025-12-21 16:11:56.279 +02:00 [INF] CORS policy execution successful.
+2025-12-21 16:11:56.280 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Update (eCommerce.Presentation)'
+2025-12-21 16:11:56.289 +02:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(eCommerce.Application.DTOs.Category.UpdateCategoryDto) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:11:56.313 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-12-21 16:11:56.318 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-21 16:11:56.320 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Update (eCommerce.Presentation) in 27.8867ms
+2025-12-21 16:11:56.322 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Update (eCommerce.Presentation)'
+2025-12-21 16:11:56.322 +02:00 [INF] HTTP PUT /api/Category/update responded 200 in 42.0953 ms
+2025-12-21 16:11:56.325 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Category/update - 200 null application/json; charset=utf-8 50.4306ms
+2025-12-21 16:12:13.600 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 16:12:13.605 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 16:12:13.607 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:12:13.621 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-12-21 16:12:13.626 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.GetCategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-21 16:12:13.627 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 16.6549ms
+2025-12-21 16:12:13.629 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 16:12:13.631 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 26.2331 ms
+2025-12-21 16:12:13.633 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 200 null application/json; charset=utf-8 33.0764ms
+2025-12-21 16:12:28.180 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/Category/delete/4 - null null
+2025-12-21 16:12:28.188 +02:00 [INF] CORS policy execution successful.
+2025-12-21 16:12:28.189 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation)'
+2025-12-21 16:12:28.200 +02:00 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:12:28.219 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-12-21 16:12:28.337 +02:00 [INF] Executed DbCommand (99ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-12-21 16:12:28.349 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-21 16:12:28.351 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation) in 145.2132ms
+2025-12-21 16:12:28.352 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation)'
+2025-12-21 16:12:28.353 +02:00 [INF] HTTP DELETE /api/Category/delete/4 responded 204 in 164.0515 ms
+2025-12-21 16:12:28.355 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/Category/delete/4 - 204 null null 174.6674ms
+2025-12-21 16:12:36.590 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/Category/delete/5 - null null
+2025-12-21 16:12:36.595 +02:00 [INF] CORS policy execution successful.
+2025-12-21 16:12:36.596 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation)'
+2025-12-21 16:12:36.598 +02:00 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 16:12:36.603 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-12-21 16:12:36.608 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-21 16:12:36.612 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation) in 12.5289ms
+2025-12-21 16:12:36.613 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Delete (eCommerce.Presentation)'
+2025-12-21 16:12:36.615 +02:00 [ERR] HTTP DELETE /api/Category/delete/5 responded 500 in 18.8292 ms
+2025-12-21 16:12:36.618 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/Category/delete/5 - 500 null application/json; charset=utf-8 27.3682ms
+2025-12-21 16:12:43.593 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 163
+2025-12-21 16:12:43.599 +02:00 [INF] CORS policy execution successful.
+2025-12-21 16:12:43.601 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-21 16:12:43.607 +02:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-21 16:12:43.729 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [CreatedAt], [Description], [Image], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-12-21 16:12:43.770 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'eCommerce.Infrastructure.Context.DBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "eCommerce", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a820afca-4196-4e98-a7e7-fee8d2a14c7b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "eCommerce", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a820afca-4196-4e98-a7e7-fee8d2a14c7b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-12-21 16:12:43.788 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 176.0334ms
+2025-12-21 16:12:43.789 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-21 16:12:43.791 +02:00 [ERR] SQL Exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "eCommerce", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a820afca-4196-4e98-a7e7-fee8d2a14c7b
+Error Number:547,State:0,Class:16
+2025-12-21 16:12:43.797 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 196.1218 ms
+2025-12-21 16:12:43.799 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/json 205.8575ms
+2025-12-21 21:21:17.238 +02:00 [INF] Application is starting...
+2025-12-21 21:21:17.408 +02:00 [INF] Application is running.
+2025-12-21 21:21:17.495 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:21:17.499 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:21:17.534 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:21:17.537 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:21:17.538 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:21:27.159 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:21:27.324 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 55.5810 ms
+2025-12-21 21:21:27.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 172.9623ms
+2025-12-21 21:21:27.393 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:21:27.393 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:21:27.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 7.6347ms
+2025-12-21 21:21:27.427 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7037ms
+2025-12-21 21:21:27.704 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:21:27.718 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.4392 ms
+2025-12-21 21:21:27.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1771ms
+2025-12-21 21:21:30.167 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:21:30.203 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:21:30.225 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:21:30.435 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 205.4353ms
+2025-12-21 21:21:30.438 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:21:30.441 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Application.Services.Implementations.CategoryService.GetAllAsync() in E:\eCommerce\eCommerce.Application\Services\Implementations\CategoryService.cs:line 34
+   at eCommerce.Presentation.Controllers.CategoryController.GetAll() in E:\eCommerce\eCommerce.Host\Controllers\CategoryController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:21:30.512 +02:00 [ERR] HTTP GET /api/Category/all responded 500 in 334.9293 ms
+2025-12-21 21:21:30.516 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 500 null application/json 348.9ms
+2025-12-21 21:21:46.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/2 - null null
+2025-12-21 21:21:46.058 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation)'
+2025-12-21 21:21:46.068 +02:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:21:46.087 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation) in 17.1632ms
+2025-12-21 21:21:46.089 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetById (eCommerce.Presentation)'
+2025-12-21 21:21:46.090 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Application.Services.Implementations.CategoryService.GetByIdAsync(Int32 id) in E:\eCommerce\eCommerce.Application\Services\Implementations\CategoryService.cs:line 46
+   at eCommerce.Presentation.Controllers.CategoryController.GetById(Int32 id) in E:\eCommerce\eCommerce.Host\Controllers\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:21:46.092 +02:00 [ERR] HTTP GET /api/Category/2 responded 500 in 34.7638 ms
+2025-12-21 21:21:46.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/2 - 500 null application/json 39.789ms
+2025-12-21 21:26:19.516 +02:00 [INF] Application is starting...
+2025-12-21 21:26:19.656 +02:00 [INF] Application is running.
+2025-12-21 21:26:19.737 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:26:19.740 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:26:19.850 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:26:19.852 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:26:19.852 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:26:25.403 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:26:25.564 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 75.3413 ms
+2025-12-21 21:26:25.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:26:25.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:26:25.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 173.4605ms
+2025-12-21 21:26:25.586 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 10.2635ms
+2025-12-21 21:26:25.616 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.5309ms
+2025-12-21 21:26:25.861 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:26:25.882 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.0021 ms
+2025-12-21 21:26:25.886 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.2789ms
+2025-12-21 21:26:28.768 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:26:28.782 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:26:28.795 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:26:28.932 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 132.7343ms
+2025-12-21 21:26:28.935 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:26:28.936 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Application.Services.Implementations.CategoryService.GetAllAsync() in E:\eCommerce\eCommerce.Application\Services\Implementations\CategoryService.cs:line 44
+   at eCommerce.Presentation.Controllers.CategoryController.GetAll() in E:\eCommerce\eCommerce.Host\Controllers\CategoryController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:26:28.957 +02:00 [ERR] HTTP GET /api/Category/all responded 500 in 183.2517 ms
+2025-12-21 21:26:28.962 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 500 null application/json 194.3355ms
+2025-12-21 21:26:37.992 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Product/all - null null
+2025-12-21 21:26:37.996 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:26:37.999 +02:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-21 21:26:38.007 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation) in 6.9511ms
+2025-12-21 21:26:38.008 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:26:38.009 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Application.Services.Implementations.ProductService.GetAllAsync() in E:\eCommerce\eCommerce.Application\Services\Implementations\ProductService.cs:line 43
+   at eCommerce.Presentation.Controllers.ProductController.GetAll() in E:\eCommerce\eCommerce.Host\Controllers\ProductController.cs:line 15
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:26:38.014 +02:00 [ERR] HTTP GET /api/Product/all responded 500 in 18.2410 ms
+2025-12-21 21:26:38.015 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Product/all - 500 null application/json 23.5241ms
+2025-12-21 21:29:11.265 +02:00 [INF] Application is starting...
+2025-12-21 21:29:11.411 +02:00 [INF] Application is running.
+2025-12-21 21:29:11.486 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:29:11.489 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:29:11.520 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:29:11.522 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:29:11.522 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:29:19.495 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:29:19.609 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 43.9904 ms
+2025-12-21 21:29:19.617 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:29:19.617 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:29:19.617 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 122.1959ms
+2025-12-21 21:29:19.627 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 9.8205ms
+2025-12-21 21:29:19.646 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.0005ms
+2025-12-21 21:29:19.710 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:29:19.729 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.1573 ms
+2025-12-21 21:29:19.735 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.9183ms
+2025-12-21 21:29:22.195 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category - null null
+2025-12-21 21:29:22.206 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:29:22.219 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:29:22.352 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 128.8051ms
+2025-12-21 21:29:22.355 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:29:22.356 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Application.Services.Implementations.CategoryService.GetAllAsync() in E:\eCommerce\eCommerce.Application\Services\Implementations\CategoryService.cs:line 44
+   at eCommerce.Presentation.Controllers.CategoryController.GetAll() in E:\eCommerce\eCommerce.Host\Controllers\CategoryController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:29:22.379 +02:00 [ERR] HTTP GET /api/Category responded 500 in 179.1261 ms
+2025-12-21 21:29:22.382 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category - 500 null application/json 186.5425ms
+2025-12-21 21:33:34.253 +02:00 [INF] Application is starting...
+2025-12-21 21:33:34.384 +02:00 [INF] Application is running.
+2025-12-21 21:33:34.460 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:33:34.463 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:33:34.496 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:33:34.498 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:33:34.498 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:33:49.654 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:33:49.771 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 54.6704 ms
+2025-12-21 21:33:49.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 126.2965ms
+2025-12-21 21:33:49.923 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:33:49.923 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:33:49.931 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.104ms
+2025-12-21 21:33:49.945 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3105ms
+2025-12-21 21:33:49.994 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:33:50.014 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.6817 ms
+2025-12-21 21:33:50.020 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.2917ms
+2025-12-21 21:33:53.511 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:33:53.528 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:33:53.544 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:33:54.132 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 582.7352ms
+2025-12-21 21:33:54.134 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:33:54.137 +02:00 [ERR] Unknown Exception
+System.InvalidOperationException: The entity type 'UserRole' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at eCommerce.Infrastructure.Repositories.GenericRepository`1.GetAllAsync()
+   at eCommerce.Application.Services.Implementations.CategoryService.GetAllAsync() in E:\eCommerce\eCommerce.Application\Services\Implementations\CategoryService.cs:line 44
+   at eCommerce.Presentation.Controllers.CategoryController.GetAll() in E:\eCommerce\eCommerce.Host\Controllers\CategoryController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-21 21:33:54.183 +02:00 [ERR] HTTP GET /api/Category/all responded 500 in 664.1733 ms
+2025-12-21 21:33:54.190 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 500 null application/json 679.1102ms
+2025-12-21 21:34:29.783 +02:00 [INF] Application is starting...
+2025-12-21 21:34:29.937 +02:00 [INF] Application is running.
+2025-12-21 21:34:30.011 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:34:30.015 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:34:30.047 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:34:30.050 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:34:30.050 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:34:35.932 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:34:36.048 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 49.4051 ms
+2025-12-21 21:34:36.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:34:36.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:34:36.056 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 124.8905ms
+2025-12-21 21:34:36.060 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 7.5129ms
+2025-12-21 21:34:36.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.2031ms
+2025-12-21 21:34:36.191 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:34:36.223 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.4229 ms
+2025-12-21 21:34:36.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.3807ms
+2025-12-21 21:34:38.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:34:38.656 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:34:38.674 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:34:39.188 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:34:39.191 +02:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:34:39.192 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:34:39.192 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:34:39.763 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-12-21 21:34:39.800 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.GetCategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-21 21:34:39.813 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 1133.9869ms
+2025-12-21 21:34:39.815 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:34:39.816 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 1169.2089 ms
+2025-12-21 21:34:39.820 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 200 null application/json; charset=utf-8 1180.0668ms
+2025-12-21 21:37:35.505 +02:00 [INF] Application is starting...
+2025-12-21 21:37:35.671 +02:00 [INF] Application is running.
+2025-12-21 21:37:35.747 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:37:35.751 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:37:35.783 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:37:35.785 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:37:35.786 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:37:39.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:37:40.035 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 44.1451 ms
+2025-12-21 21:37:40.040 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:37:40.040 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:37:40.043 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 115.7887ms
+2025-12-21 21:37:40.049 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.9134ms
+2025-12-21 21:37:40.072 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.9149ms
+2025-12-21 21:37:40.110 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:37:40.128 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.1550 ms
+2025-12-21 21:37:40.133 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.604ms
+2025-12-21 21:37:42.636 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:37:42.659 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:37:42.675 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:37:43.232 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:37:43.629 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-12-21 21:37:43.665 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.GetCategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-21 21:37:43.677 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 997.6887ms
+2025-12-21 21:37:43.680 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:37:43.681 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 1033.0101 ms
+2025-12-21 21:37:43.685 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 200 null application/json; charset=utf-8 1049.1557ms
+2025-12-21 21:55:41.083 +02:00 [INF] Application is starting...
+2025-12-21 21:55:41.388 +02:00 [INF] Application is running.
+2025-12-21 21:55:41.465 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-21 21:55:41.468 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-21 21:55:41.499 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 21:55:41.501 +02:00 [INF] Hosting environment: Development
+2025-12-21 21:55:41.502 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-21 21:55:57.567 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-21 21:55:57.743 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 62.7460 ms
+2025-12-21 21:55:57.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 184.3087ms
+2025-12-21 21:55:57.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-21 21:55:57.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-21 21:55:57.804 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 6.7373ms
+2025-12-21 21:55:57.828 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.9169ms
+2025-12-21 21:55:58.183 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-21 21:55:58.198 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.0328 ms
+2025-12-21 21:55:58.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.8693ms
+2025-12-21 21:56:01.547 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Category/all - null null
+2025-12-21 21:56:01.567 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:56:01.587 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:56:02.259 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-21 21:56:02.750 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-12-21 21:56:02.791 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.GetCategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-21 21:56:02.808 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation) in 1215.3958ms
+2025-12-21 21:56:02.810 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.GetAll (eCommerce.Presentation)'
+2025-12-21 21:56:02.812 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 1258.9828 ms
+2025-12-21 21:56:02.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Category/all - 200 null application/json; charset=utf-8 1270.3937ms
+2025-12-21 21:56:07.741 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Category/add - application/json 22
+2025-12-21 21:56:07.747 +02:00 [INF] CORS policy execution successful.
+2025-12-21 21:56:07.748 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 21:56:07.757 +02:00 [INF] Route matched with {action = "Add", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Category.CreateCategoryDto) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:56:07.989 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-12-21 21:56:08.020 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-21 21:56:08.026 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation) in 267.9266ms
+2025-12-21 21:56:08.029 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 21:56:08.030 +02:00 [INF] HTTP POST /api/Category/add responded 200 in 281.4589 ms
+2025-12-21 21:56:08.033 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Category/add - 200 null application/json; charset=utf-8 292.1216ms
+2025-12-21 21:56:19.840 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Category/add - application/json 18
+2025-12-21 21:56:19.845 +02:00 [INF] CORS policy execution successful.
+2025-12-21 21:56:19.847 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 21:56:19.849 +02:00 [INF] Route matched with {action = "Add", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Category.CreateCategoryDto) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-21 21:56:19.866 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-21 21:56:19.889 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation) in 37.6538ms
+2025-12-21 21:56:19.891 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-21 21:56:19.893 +02:00 [INF] HTTP POST /api/Category/add responded 400 in 46.2427 ms
+2025-12-21 21:56:19.894 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Category/add - 400 null application/problem+json; charset=utf-8 55.8914ms

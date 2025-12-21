@@ -7,55 +7,67 @@ using eCommerce.Domain.Interfaces;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class ProductService(IUnitOfWork unitOfWork, IMapper mapper) : IProductService
+    public class ProductService : IProductService
     {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public ProductService(IUnitOfWork unitOfWork, IMapper mapper)
+        {
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+
         public async Task<ServiceResponse> AddAsync(CreateProductDto entity)
         {
+            var mappedData = _mapper.Map<Product>(entity);
 
-            var mappedDate = mapper.Map<Product>(entity);
-            int result = await unitOfWork.Products.AddAsync(mappedDate);
-            if (result > 0)
-                return new ServiceResponse(true, "Product added successfully");
-            return new ServiceResponse(false, "Product failed to be added.");
+            await _unitOfWork.Products.AddAsync(mappedData);
+            await _unitOfWork.SaveAsync();
+
+            return new ServiceResponse(true, "Product added successfully");
         }
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            int result = await unitOfWork.Products.DeleteAsync(id);
-            if (result > 0)
-                return new ServiceResponse(true, "Product deleted successfully");
-            //it is perefered not to specify the exact reason for security
-            return new ServiceResponse(false, "Product not found or failed to be deleted.");
+            var result = await _unitOfWork.Products.DeleteAsync(id);
+            if (result == 0)
+                return new ServiceResponse(false, "Product not found");
+
+            await _unitOfWork.SaveAsync();
+            return new ServiceResponse(true, "Product deleted successfully");
         }
 
         public async Task<IEnumerable<ProductBaseDto>> GetAllAsync()
         {
-            var rawData = await unitOfWork.Products.GetAllAsync();
-            //map the (destination)result(product) to (source)ProductBaseDto
-            if(!rawData.Any())
-                //return empty list [] if there is no products
-                return Enumerable.Empty<ProductBaseDto>();
-            var mappedData = mapper.Map<IEnumerable<GetProductDto>>(rawData);
-            return mappedData;
+            var rawData = await _unitOfWork.Products.GetAllAsync();
 
+            if (!rawData.Any())
+                return Enumerable.Empty<ProductBaseDto>();
+
+            return _mapper.Map<IEnumerable<GetProductDto>>(rawData);
         }
 
         public async Task<GetProductDto?> GetByIdAsync(int id)
         {
-            var rawData = await unitOfWork.Products.GetByIdAsync(id);
-            if(rawData == null)
+            var rawData = await _unitOfWork.Products.GetByIdAsync(id);
+            if (rawData == null)
                 return null;
-            return mapper.Map<GetProductDto>(rawData);
+
+            return _mapper.Map<GetProductDto>(rawData);
         }
 
         public async Task<ServiceResponse> UpdateAsync(UpdateProductDto entity)
         {
-            //mapping the source entity to destination product
-            var mappedDate = mapper.Map<Product>(entity);
-            int result = await unitOfWork.Products.UpdateAsync(mappedDate);
-            if (result > 0)
-                return new ServiceResponse(true, "Product updated successfully");
-            return new ServiceResponse(false, "Product failed to be updated.");
+            var mappedData = _mapper.Map<Product>(entity);
+
+            var result = await _unitOfWork.Products.UpdateAsync(mappedData);
+            if (result == 0)
+                return new ServiceResponse(false, "Product not found");
+
+            await _unitOfWork.SaveAsync();
+            return new ServiceResponse(true, "Product updated successfully");
         }
     }
+
 }

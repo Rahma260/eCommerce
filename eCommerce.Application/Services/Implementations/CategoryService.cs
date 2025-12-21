@@ -8,55 +8,66 @@ using eCommerce.Domain.Interfaces;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class CategoryService(IUnitOfWork unitOfWork, IMapper mapper) : ICategoryService
+    public class CategoryService : ICategoryService
     {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
+        {
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+
         public async Task<ServiceResponse> AddAsync(CreateCategoryDto entity)
         {
+            var mappedData = _mapper.Map<Category>(entity);
 
-            var mappedDate = mapper.Map<Category>(entity);
-            int result = await unitOfWork.Categories.AddAsync(mappedDate);
-            if (result > 0)
-                return new ServiceResponse(true, "Category added successfully");
-            return new ServiceResponse(false, "Category failed to be added.");
+            await _unitOfWork.Categories.AddAsync(mappedData);
+            await _unitOfWork.SaveAsync();
+
+            return new ServiceResponse(true, "Category added successfully");
         }
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            int result = await unitOfWork.Categories.DeleteAsync(id);
-            if (result > 0)
-                return new ServiceResponse(true, "Category deleted successfully");
-            //it is perefered not to specify the exact reason for security
-            return new ServiceResponse(false, "Category not found or failed to be deleted.");
+            var result = await _unitOfWork.Categories.DeleteAsync(id);
+            if (result == 0)
+                return new ServiceResponse(false, "Category not found");
+
+            await _unitOfWork.SaveAsync();
+            return new ServiceResponse(true, "Category deleted successfully");
         }
 
         public async Task<IEnumerable<CategoryBaseDto>> GetAllAsync()
         {
-            var rawData = await unitOfWork.Categories.GetAllAsync();
-            //map the (destination)result(Category) to (source)CategoryBaseDto
-            if (!rawData.Any())
-                //return empty list if there is no Categorys
-                return Enumerable.Empty<CategoryBaseDto>();
-            var mappedData = mapper.Map<IEnumerable<GetCategoryDto>>(rawData);
-            return mappedData;
+            var rawData = await _unitOfWork.Categories.GetAllAsync();
 
+            if (!rawData.Any())
+                return Enumerable.Empty<CategoryBaseDto>();
+
+            return _mapper.Map<IEnumerable<GetCategoryDto>>(rawData);
         }
 
         public async Task<GetCategoryDto?> GetByIdAsync(int id)
         {
-            var rawData = await unitOfWork.Categories.GetByIdAsync(id);
+            var rawData = await _unitOfWork.Categories.GetByIdAsync(id);
             if (rawData == null)
                 return null;
-            return mapper.Map<GetCategoryDto>(rawData);
+
+            return _mapper.Map<GetCategoryDto>(rawData);
         }
 
         public async Task<ServiceResponse> UpdateAsync(UpdateCategoryDto entity)
         {
-            //mapping the source entity to destination Category
-            var mappedDate = mapper.Map<Category>(entity);
-            int result = await unitOfWork.Categories.UpdateAsync(mappedDate);
-            if (result > 0)
-                return new ServiceResponse(true, "Category updated successfully");
-            return new ServiceResponse(false, "Category failed to be updated.");
+            var mappedData = _mapper.Map<Category>(entity);
+
+            var result = await _unitOfWork.Categories.UpdateAsync(mappedData);
+            if (result == 0)
+                return new ServiceResponse(false, "Category not found");
+
+            await _unitOfWork.SaveAsync();
+            return new ServiceResponse(true, "Category updated successfully");
         }
     }
 }

@@ -1,13 +1,5 @@
 ﻿using eCommerce.Domain.Interfaces;
-using eCommerce.Infrastructure.Context;
-using eCommerce.Infrastructure.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace eCommerce.Infrastructure.Repositories
 {
     public class GenericRepository<TEntity>(DBContext context) : IGenericRepository<TEntity> where TEntity : class

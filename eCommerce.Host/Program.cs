@@ -1,5 +1,7 @@
 using eCommerce.Application.DependencyInjection;
+using eCommerce.Application.Validators;
 using eCommerce.Infrastructure.DependencyInjection;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi;
 using Microsoft.OpenApi.Models;
@@ -19,7 +21,15 @@ builder.Host.UseSerilog(); // Use Serilog for logging
 Log.Logger.Information("Application is starting...");
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services
+    .AddControllers()
+    .AddFluentValidation(fv =>
+    {
+        fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryValidator>();
+        fv.RegisterValidatorsFromAssemblyContaining<UpdateCategoryValidator>();
+        fv.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>();
+        fv.RegisterValidatorsFromAssemblyContaining<UpdateProductValidator>();
+    });
 
 // Add Swagger/OpenAPI services
 builder.Services.AddEndpointsApiExplorer(); // Required for minimal APIs

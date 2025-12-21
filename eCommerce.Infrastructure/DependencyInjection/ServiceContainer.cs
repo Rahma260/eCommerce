@@ -1,12 +1,10 @@
 ﻿using eCommerce.Domain.Interfaces;
-using eCommerce.Infrastructure.Context;
 using eCommerce.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EntityFramework.Exceptions.SqlServer;
 using eCommerce.Domain.Entities;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.AspNetCore.Builder;
 using eCommerce.Infrastructure.Middleware;
 using eCommerce.Application.Services.Interfaces.Logging;

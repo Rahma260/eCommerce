@@ -13,7 +13,7 @@ namespace eCommerce.Presentation.Controllers
         public async Task<IActionResult> GetAll()
         {
             var data = await productService.GetAllAsync();
-            return data.Any() ? Ok(data) : NotFound(new {message = "there is no found data"});
+            return Ok(data);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -25,16 +25,16 @@ namespace eCommerce.Presentation.Controllers
         public async Task<IActionResult> Add(CreateProductDto product)
         {
             //to ensure that the model sent by user is applying all required rules in dtos(data annotation)
-            if(!ModelState.IsValid)
-                return BadRequest(ModelState);
+            //if(!ModelState.IsValid)
+            //    return BadRequest(ModelState);
             var result = await productService.AddAsync(product);
             return result.success ? Ok(result) : StatusCode(500, new {message = "adding product failed"});
         }
         [HttpPut("update")]
         public async Task<IActionResult> Update(UpdateProductDto product)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            //if (!ModelState.IsValid)
+            //    return BadRequest(ModelState);
             var result = await productService.UpdateAsync(product);
             return result.success ? Ok(result) : StatusCode(500, new {message = "updating product failoed"});
         }

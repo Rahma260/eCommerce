@@ -2,6 +2,7 @@
 using eCommerce.Application.Mapping;
 using eCommerce.Application.Services.Implementations;
 using eCommerce.Application.Services.Interfaces;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -15,7 +16,6 @@ namespace eCommerce.Application.DependencyInjection
             services.AddAutoMapper(typeof(MappingConfig));
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
-
             return services;
         }
     }
