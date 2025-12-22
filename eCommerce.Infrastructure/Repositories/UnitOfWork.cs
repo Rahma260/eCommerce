@@ -11,15 +11,13 @@ namespace eCommerce.Infrastructure.Repositories
         public IGenericRepository<Category> Categories { get; private set; }
         public IGenericRepository<Cart> Carts { get; private set; }
         public IGenericRepository<CartItem> CartItems { get; private set; }
-
         public IGenericRepository<Order> Orders { get; private set; }
         public IGenericRepository<OrderItem> OrderItems { get; private set; }
-
         public IGenericRepository<Payment> Payments { get; private set; }
-
         public IGenericRepository<User> Users { get; private set; }
         public IGenericRepository<Role> Roles { get; private set; }
         public IGenericRepository<UserRole> UserRoles { get; private set; }
+        public IGenericRepository<Brand> Brands { get; private set; }
         public UnitOfWork(DBContext context)
         {
             _context = context;
@@ -33,6 +31,7 @@ namespace eCommerce.Infrastructure.Repositories
             Users = new GenericRepository<User>(_context);
             Roles = new GenericRepository<Role>(_context);
             UserRoles = new GenericRepository<UserRole>(_context);
+            Brands = new GenericRepository<Brand>(_context);
         }
 
         public async Task<int> SaveAsync()

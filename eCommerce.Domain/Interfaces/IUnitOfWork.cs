@@ -14,7 +14,7 @@ namespace eCommerce.Domain.Interfaces
         IGenericRepository<User> Users { get; }
         IGenericRepository<Role> Roles { get; }
         IGenericRepository<UserRole> UserRoles { get; }
-
+        IGenericRepository<Brand> Brands { get; }
         Task<int> SaveAsync();
     }
 }

@@ -18,6 +18,7 @@ public class DBContext : DbContext
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<Payment> Payments { get; set; }
+    public DbSet<Brand> Brands { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -60,5 +61,6 @@ public class DBContext : DbContext
         modelBuilder.Entity<Payment>()
             .Property(p => p.Amount)
             .HasPrecision(18, 2);
+
     }
 }

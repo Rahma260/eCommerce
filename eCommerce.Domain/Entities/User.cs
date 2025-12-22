@@ -6,11 +6,6 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Domain.Entities
 {
-    public enum Gender
-    {
-        Male,
-        Female,
-    }
     public class User 
     {
         public int Id { get; set; }
