@@ -2,14 +2,14 @@
 
 namespace eCommerce.Domain.Entities
 {
-    public class Cart
+    public class UserRole
     {
-        public int Id { get; set; }
-
         public string UserId { get; set; } = null!;
         public User User { get; set; } = null!;
 
-        public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+        public string RoleId { get; set; } = null!;
+        public Role Role { get; set; } = null!;
     }
+
 
 }

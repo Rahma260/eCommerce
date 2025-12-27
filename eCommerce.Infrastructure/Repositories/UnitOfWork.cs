@@ -1,4 +1,5 @@
 ﻿using eCommerce.Domain.Entities;
+using eCommerce.Domain.Entities.Identity;
 using eCommerce.Domain.Interfaces;
 
 namespace eCommerce.Infrastructure.Repositories
@@ -17,6 +18,7 @@ namespace eCommerce.Infrastructure.Repositories
         public IGenericRepository<User> Users { get; private set; }
         public IGenericRepository<Role> Roles { get; private set; }
         public IGenericRepository<UserRole> UserRoles { get; private set; }
+        public IGenericRepository<RefreshToken> RefreshToken { get; private set; }
         public IGenericRepository<Brand> Brands { get; private set; }
         public UnitOfWork(DBContext context)
         {
@@ -32,6 +34,7 @@ namespace eCommerce.Infrastructure.Repositories
             Roles = new GenericRepository<Role>(_context);
             UserRoles = new GenericRepository<UserRole>(_context);
             Brands = new GenericRepository<Brand>(_context);
+            RefreshToken = new GenericRepository<RefreshToken>(_context);
         }
 
         public async Task<int> SaveAsync()

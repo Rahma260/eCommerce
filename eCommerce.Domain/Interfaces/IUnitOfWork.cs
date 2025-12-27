@@ -1,4 +1,5 @@
 ﻿using eCommerce.Domain.Entities;
+using eCommerce.Domain.Entities.Identity;
 namespace eCommerce.Domain.Interfaces
 {
     public interface IUnitOfWork : IDisposable
@@ -14,6 +15,7 @@ namespace eCommerce.Domain.Interfaces
         IGenericRepository<User> Users { get; }
         IGenericRepository<Role> Roles { get; }
         IGenericRepository<UserRole> UserRoles { get; }
+        IGenericRepository<RefreshToken> RefreshToken { get; }
         IGenericRepository<Brand> Brands { get; }
         Task<int> SaveAsync();
     }

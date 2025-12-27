@@ -9,6 +9,13 @@ using Microsoft.AspNetCore.Builder;
 using eCommerce.Infrastructure.Middleware;
 using eCommerce.Application.Services.Interfaces.Logging;
 using eCommerce.Application.Services.Implementations.Logging;
+using eCommerce.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using eCommerce.Domain.Interfaces.Identity;
+using eCommerce.Infrastructure.Repositories.Identity;
 
 
 namespace eCommerce.Infrastructure.DependencyInjection
@@ -40,6 +47,46 @@ namespace eCommerce.Infrastructure.DependencyInjection
             services.AddScoped(typeof(IAppLogger<>), typeof(SerilogLoggerAdapter<>));
             //register unit of work for dependency injection
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //configure identity options
+            services.AddDefaultIdentity<User>(
+                options =>
+                {
+                    options.SignIn.RequireConfirmedEmail = true;
+                    options.Tokens.EmailConfirmationTokenProvider = TokenOptions.DefaultEmailProvider;
+                    options.Password.RequireDigit = true;
+                    options.Password.RequireNonAlphanumeric = true;
+                    options.Password.RequireUppercase = true;
+                    options.Password.RequiredLength = 8;
+                    options.Password.RequireLowercase = true;
+                    options.Password.RequiredUniqueChars = 1;
+                })
+                .AddRoles<Role>()
+                .AddEntityFrameworkStores<DBContext>();
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+               // options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    RequireExpirationTime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = configuration["JWT:Issuer"],
+                    ValidAudience = configuration["JWT:Audience"],
+                    ClockSkew = TimeSpan.Zero,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]!))
+                };
+            });
+            services.AddScoped<ITokenManagement, TokenManagement>();
+            services.AddScoped<IRoleManagement, RoleManagement>();
+            services.AddScoped<IUserManagement, UserManagement>();
             return services;
         }
         //extension method for IApplicationBuilder to use global exception handling middleware 

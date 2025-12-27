@@ -1,6 +1,7 @@
 ﻿using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
 using eCommerce.Application.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ namespace eCommerce.Presentation.Controllers
     //or send as a parameter in controller signature(primary constructor) (C# 12.0 feature)
     public class CategoryController(ICategoryService CategoryService) : ControllerBase
     {
+        [Authorize]
         [HttpGet("all")]
         public async Task<IActionResult> GetAll()
         {

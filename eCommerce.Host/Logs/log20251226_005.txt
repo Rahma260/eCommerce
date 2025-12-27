@@ -1,0 +1,342 @@
+2025-12-26 16:13:52.705 +02:00 [INF] Application is starting...
+2025-12-26 16:13:53.215 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:17:09.658 +02:00 [INF] Application is starting...
+2025-12-26 16:17:10.107 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:17:35.804 +02:00 [INF] Application is starting...
+2025-12-26 16:17:36.258 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:17:56.408 +02:00 [INF] Application is starting...
+2025-12-26 16:17:56.967 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:19:18.492 +02:00 [INF] Application is starting...
+2025-12-26 16:19:18.936 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:20:04.748 +02:00 [INF] Application is starting...
+2025-12-26 16:20:05.204 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:20:21.722 +02:00 [INF] Application is starting...
+2025-12-26 16:20:22.184 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:20:39.190 +02:00 [INF] Application is starting...
+2025-12-26 16:20:39.684 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:49:36.132 +02:00 [INF] Application is starting...
+2025-12-26 16:49:36.661 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:49:58.826 +02:00 [INF] Application is starting...
+2025-12-26 16:49:59.307 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-26 16:50:13.343 +02:00 [INF] Application is starting...
+2025-12-26 16:50:14.131 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-26 16:50:14.580 +02:00 [INF] Application is running.
+2025-12-26 16:50:15.059 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-26 16:50:15.063 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-26 16:50:15.247 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-26 16:50:15.251 +02:00 [INF] Hosting environment: Development
+2025-12-26 16:50:15.256 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-26 16:50:27.010 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-26 16:50:27.796 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 189.6396 ms
+2025-12-26 16:50:27.857 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 853.2928ms
+2025-12-26 16:50:27.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-26 16:50:27.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-26 16:50:27.929 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 6.4115 ms
+2025-12-26 16:50:27.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-26 16:50:27.945 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 69.4448ms
+2025-12-26 16:50:27.980 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 104.2453ms
+2025-12-26 16:50:28.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.0879ms
+2025-12-26 16:50:28.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-26 16:50:28.436 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 35.2481 ms
+2025-12-26 16:50:28.447 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.2105ms
+2025-12-26 16:50:51.084 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/login - application/json 67
+2025-12-26 16:50:51.109 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:50:51.139 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-26 16:50:51.219 +02:00 [INF] Route matched with {action = "Login", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:50:54.233 +02:00 [WRN] The foreign key property 'Address.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-12-26 16:50:54.358 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-26 16:50:56.763 +02:00 [INF] Executed DbCommand (383ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 16:50:56.881 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation) in 5641.0097ms
+2025-12-26 16:50:56.889 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-26 16:50:56.895 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Infrastructure.Repositories.Identity.UserManagement.LoginUser(User user) in E:\eCommerce\eCommerce.Infrastructure\Repositories\Identity\UserManagement.cs:line 53
+   at eCommerce.Application.Services.Implementations.Identity.IdentityService.LoginUser(LoginUserDto user) in E:\eCommerce\eCommerce.Application\Services\Implementations\Identity\IdentityService.cs:line 67
+   at eCommerce.Presentation.Controllers.IdentityController.Login(LoginUserDto user) in E:\eCommerce\eCommerce.Host\Controllers\IdentityController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-26 16:50:57.012 +02:00 [ERR] HTTP POST /api/Identity/login responded 500 in 5895.7237 ms
+2025-12-26 16:50:57.039 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/login - 500 null application/json 5955.061ms
+2025-12-26 16:51:46.003 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 148
+2025-12-26 16:51:46.018 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:51:46.022 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:51:46.041 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:51:46.118 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-26 16:51:46.169 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 121.9876ms
+2025-12-26 16:51:46.176 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:51:46.179 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 157.8673 ms
+2025-12-26 16:51:46.185 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/problem+json; charset=utf-8 181.8239ms
+2025-12-26 16:52:00.168 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 148
+2025-12-26 16:52:00.179 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:52:00.182 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:52:00.186 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:52:00.502 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 16:52:00.526 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 16:52:00.538 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 346.1071ms
+2025-12-26 16:52:00.545 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:52:00.549 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 367.8122 ms
+2025-12-26 16:52:00.557 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 389.3ms
+2025-12-26 16:56:09.042 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 147
+2025-12-26 16:56:09.070 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:56:09.075 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:56:09.080 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:56:09.164 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 16:56:09.174 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 16:56:09.179 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 91.4336ms
+2025-12-26 16:56:09.184 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:56:09.187 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 112.8187 ms
+2025-12-26 16:56:09.194 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 151.9646ms
+2025-12-26 16:56:17.109 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 143
+2025-12-26 16:56:17.120 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:56:17.124 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:56:17.129 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:56:17.165 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 16:56:17.175 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 16:56:17.179 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 33.7652ms
+2025-12-26 16:56:17.184 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:56:17.187 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 62.9711 ms
+2025-12-26 16:56:17.192 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 83.8209ms
+2025-12-26 16:58:22.282 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 144
+2025-12-26 16:58:22.293 +02:00 [INF] CORS policy execution successful.
+2025-12-26 16:58:22.295 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:58:22.299 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 16:58:22.327 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 16:58:22.337 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 16:58:22.341 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 34.5336ms
+2025-12-26 16:58:22.347 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 16:58:22.350 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 54.5800 ms
+2025-12-26 16:58:22.356 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 74.243ms
+2025-12-26 17:02:32.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-26 17:02:32.716 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.8747 ms
+2025-12-26 17:02:32.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 39.9196ms
+2025-12-26 17:02:32.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-26 17:02:32.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-26 17:02:32.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 10.6964ms
+2025-12-26 17:02:32.796 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-26 17:02:32.797 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.5276 ms
+2025-12-26 17:02:32.823 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 45.6122ms
+2025-12-26 17:02:32.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.0641ms
+2025-12-26 17:02:33.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-26 17:02:33.718 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 35.4550 ms
+2025-12-26 17:02:33.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.8551ms
+2025-12-26 17:02:38.731 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 117
+2025-12-26 17:02:38.741 +02:00 [INF] CORS policy execution successful.
+2025-12-26 17:02:38.744 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:02:38.748 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 17:02:38.760 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-26 17:02:38.766 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 10.8797ms
+2025-12-26 17:02:38.773 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:02:38.777 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 33.0433 ms
+2025-12-26 17:02:38.783 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/problem+json; charset=utf-8 51.153ms
+2025-12-26 17:03:43.375 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 137
+2025-12-26 17:03:43.385 +02:00 [INF] CORS policy execution successful.
+2025-12-26 17:03:43.389 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:03:43.393 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 17:03:43.434 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 17:03:43.445 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 17:03:43.452 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 52.2591ms
+2025-12-26 17:03:43.457 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:03:43.461 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 72.1757 ms
+2025-12-26 17:03:43.469 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 93.9039ms
+2025-12-26 17:05:52.398 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/login - application/json 62
+2025-12-26 17:05:52.412 +02:00 [INF] CORS policy execution successful.
+2025-12-26 17:05:52.415 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-26 17:05:52.424 +02:00 [INF] Route matched with {action = "Login", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 17:05:52.466 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 17:05:52.477 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation) in 44.2984ms
+2025-12-26 17:05:52.483 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-26 17:05:52.491 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at eCommerce.Infrastructure.Repositories.Identity.UserManagement.LoginUser(User user) in E:\eCommerce\eCommerce.Infrastructure\Repositories\Identity\UserManagement.cs:line 53
+   at eCommerce.Application.Services.Implementations.Identity.IdentityService.LoginUser(LoginUserDto user) in E:\eCommerce\eCommerce.Application\Services\Implementations\Identity\IdentityService.cs:line 67
+   at eCommerce.Presentation.Controllers.IdentityController.Login(LoginUserDto user) in E:\eCommerce\eCommerce.Host\Controllers\IdentityController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-26 17:05:52.515 +02:00 [ERR] HTTP POST /api/Identity/login responded 500 in 99.4660 ms
+2025-12-26 17:05:52.523 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/login - 500 null application/json 124.8234ms
+2025-12-26 17:09:20.486 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 137
+2025-12-26 17:09:20.517 +02:00 [INF] CORS policy execution successful.
+2025-12-26 17:09:20.521 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:09:20.526 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 17:09:20.559 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 17:09:20.567 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 17:09:20.572 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 39.5252ms
+2025-12-26 17:09:20.577 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:09:20.580 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 59.6141 ms
+2025-12-26 17:09:20.587 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 101.4107ms
+2025-12-26 17:09:25.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-26 17:09:25.536 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.8578 ms
+2025-12-26 17:09:25.543 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 32.6892ms
+2025-12-26 17:09:25.589 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-26 17:09:25.589 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-26 17:09:25.601 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 12.0312ms
+2025-12-26 17:09:25.611 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-26 17:09:25.616 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.5773 ms
+2025-12-26 17:09:25.639 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 50.0494ms
+2025-12-26 17:09:25.653 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.9305ms
+2025-12-26 17:09:26.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-26 17:09:26.446 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.3396 ms
+2025-12-26 17:09:26.455 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.6774ms
+2025-12-26 17:09:40.812 +02:00 [INF] Application is starting...
+2025-12-26 17:09:41.861 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-26 17:09:42.391 +02:00 [INF] Application is running.
+2025-12-26 17:09:42.961 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-26 17:09:42.966 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-26 17:09:43.558 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-26 17:09:43.563 +02:00 [INF] Hosting environment: Development
+2025-12-26 17:09:43.567 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-26 17:09:48.251 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/register - application/json 137
+2025-12-26 17:09:48.503 +02:00 [INF] CORS policy execution successful.
+2025-12-26 17:09:48.552 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:09:48.635 +02:00 [INF] Route matched with {action = "Register", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(eCommerce.Application.DTOs.User.CreateUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-26 17:09:52.243 +02:00 [WRN] The foreign key property 'Address.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-12-26 17:09:52.397 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-26 17:09:54.991 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-26 17:09:55.097 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-26 17:09:55.132 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation) in 6478.0104ms
+2025-12-26 17:09:55.155 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Register (eCommerce.Presentation)'
+2025-12-26 17:09:55.170 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 6650.2191 ms
+2025-12-26 17:09:55.210 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/register - 400 null application/json; charset=utf-8 6965.4907ms
+2025-12-26 20:27:34.358 +02:00 [INF] Application is starting...
+2025-12-26 20:27:34.514 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67

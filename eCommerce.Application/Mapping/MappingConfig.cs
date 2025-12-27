@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
+using eCommerce.Application.DTOs.User;
 using eCommerce.Domain.Entities;
+using eCommerce.Domain.Entities.Identity;
 
 namespace eCommerce.Application.Mapping
 {
@@ -19,6 +21,10 @@ namespace eCommerce.Application.Mapping
             CreateMap<UpdateCategoryDto, Category>();
             CreateMap<UpdateProductDto, Product>();
 
+            CreateMap<CreateUserDto, User>();
+            CreateMap<LoginUserDto, User>();
+
+            CreateMap<Address, AddressBaseDto>();
         }
     }
 }

@@ -1,16 +1,15 @@
 ﻿using eCommerce.Domain.Entities;
+using eCommerce.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-public class DBContext : DbContext
+public class DBContext : IdentityDbContext<User, Role, string>
 {
     public DBContext(DbContextOptions<DBContext> options)
-        : base(options)
-    {
-    }
+        : base(options) { }
 
-    public DbSet<User> Users { get; set; }
-    public DbSet<Role> Roles { get; set; }
-    public DbSet<UserRole> UserRoles { get; set; }
+    public DbSet<RefreshToken> RefreshToken { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Cart> Carts { get; set; }
@@ -19,23 +18,10 @@ public class DBContext : DbContext
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<Brand> Brands { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-
-        // UserRole (Many-to-Many)
-        modelBuilder.Entity<UserRole>()
-            .HasKey(ur => new { ur.UserId, ur.RoleId });
-
-        modelBuilder.Entity<UserRole>()
-            .HasOne(ur => ur.User)
-            .WithMany(u => u.UserRoles)
-            .HasForeignKey(ur => ur.UserId);
-
-        modelBuilder.Entity<UserRole>()
-            .HasOne(ur => ur.Role)
-            .WithMany(r => r.UserRoles)
-            .HasForeignKey(ur => ur.RoleId);
 
         // User - Cart (One-to-One)
         modelBuilder.Entity<User>()
@@ -62,5 +48,24 @@ public class DBContext : DbContext
             .Property(p => p.Amount)
             .HasPrecision(18, 2);
 
+        modelBuilder.Entity<RefreshToken>()
+            .HasOne(r => r.User)
+            .WithMany()
+            .HasForeignKey(r => r.UserId);
+
+        // Seed Roles
+        modelBuilder.Entity<Role>().HasData(
+            new Role
+            {
+                Id = "ADMIN_ROLE_ID",
+                Name = "Admin",
+                NormalizedName = "ADMIN"
+            },
+            new Role
+            {
+                Id = "USER_ROLE_ID",
+                Name = "User",
+                NormalizedName = "USER"
+            });
     }
 }

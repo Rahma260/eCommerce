@@ -22,14 +22,14 @@ Log.Logger.Information("Application is starting...");
 
 // Add services to the container.
 builder.Services
-    .AddControllers()
-    .AddFluentValidation(fv =>
-    {
-        fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryValidator>();
-        fv.RegisterValidatorsFromAssemblyContaining<UpdateCategoryValidator>();
-        fv.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>();
-        fv.RegisterValidatorsFromAssemblyContaining<UpdateProductValidator>();
-    });
+    .AddControllers();
+    //.AddFluentValidation(fv =>
+    //{
+    //    fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryValidator>();
+    //    fv.RegisterValidatorsFromAssemblyContaining<UpdateCategoryValidator>();
+    //    fv.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>();
+    //    fv.RegisterValidatorsFromAssemblyContaining<UpdateProductValidator>();
+    //});
 
 // Add Swagger/OpenAPI services
 builder.Services.AddEndpointsApiExplorer(); // Required for minimal APIs
