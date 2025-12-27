@@ -10,11 +10,12 @@ namespace eCommerce.Infrastructure.Repositories
 
         public IGenericRepository<Product> Products { get; private set; }
         public IGenericRepository<Category> Categories { get; private set; }
-        public IGenericRepository<Cart> Carts { get; private set; }
+ ///       public IGenericRepository<Cart> Carts { get; private set; }
         public IGenericRepository<CartItem> CartItems { get; private set; }
         public IGenericRepository<Order> Orders { get; private set; }
         public IGenericRepository<OrderItem> OrderItems { get; private set; }
         public IGenericRepository<Payment> Payments { get; private set; }
+        public IGenericRepository<PaymentMethod> PaymentMethods { get; private set; }
         public IGenericRepository<User> Users { get; private set; }
         public IGenericRepository<Role> Roles { get; private set; }
         public IGenericRepository<UserRole> UserRoles { get; private set; }
@@ -25,7 +26,7 @@ namespace eCommerce.Infrastructure.Repositories
             _context = context;
             Products = new GenericRepository<Product>(_context);
             Categories = new GenericRepository<Category>(_context);
-            Carts = new GenericRepository<Cart>(_context);
+         //   Carts = new GenericRepository<Cart>(_context);
             CartItems = new GenericRepository<CartItem>(_context);
             Orders = new GenericRepository<Order>(_context);
             OrderItems = new GenericRepository<OrderItem>(_context);
@@ -35,6 +36,7 @@ namespace eCommerce.Infrastructure.Repositories
             UserRoles = new GenericRepository<UserRole>(_context);
             Brands = new GenericRepository<Brand>(_context);
             RefreshToken = new GenericRepository<RefreshToken>(_context);
+            PaymentMethods = new GenericRepository<PaymentMethod>(_context);
         }
 
         public async Task<int> SaveAsync()

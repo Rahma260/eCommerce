@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using eCommerce.Application.Mapping;
 using eCommerce.Application.Services.Implementations;
+using eCommerce.Application.Services.Implementations.Cart;
 using eCommerce.Application.Services.Implementations.Identity;
 using eCommerce.Application.Services.Interfaces;
+using eCommerce.Application.Services.Interfaces.Cart;
 using eCommerce.Application.Services.Interfaces.Identity;
 using eCommerce.Application.Validators;
 using FluentValidation;
@@ -20,6 +22,7 @@ namespace eCommerce.Application.DependencyInjection
             services.AddAutoMapper(typeof(MappingConfig));
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssemblyContaining<CreateUserValidator>();
             services.AddValidatorsFromAssemblyContaining<LoginUserValidator>();
@@ -29,6 +32,7 @@ namespace eCommerce.Application.DependencyInjection
             services.AddValidatorsFromAssemblyContaining<UpdateProductValidator>();
             services.AddScoped<IValidationService, ValidationService>();
             services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<ICartService, CartService>();
             return services;
         }
     }

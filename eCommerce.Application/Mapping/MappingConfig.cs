@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using eCommerce.Application.DTOs.Cart;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
 using eCommerce.Application.DTOs.User;
@@ -25,6 +26,8 @@ namespace eCommerce.Application.Mapping
             CreateMap<LoginUserDto, User>();
 
             CreateMap<Address, AddressBaseDto>();
+            CreateMap<PaymentMethod, GetPaymentMethod>();
+            CreateMap<CreateOrderDto, Order>();
         }
     }
 }

@@ -18,6 +18,7 @@ public class DBContext : IdentityDbContext<User, Role, string>
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<Brand> Brands { get; set; }
+    public DbSet<PaymentMethod> PaymentMethodands { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -29,11 +30,6 @@ public class DBContext : IdentityDbContext<User, Role, string>
             .WithOne(c => c.User)
             .HasForeignKey<Cart>(c => c.UserId);
 
-        // Order - Payment (One-to-One)
-        modelBuilder.Entity<Order>()
-            .HasOne(o => o.Payment)
-            .WithOne(p => p.Order)
-            .HasForeignKey<Payment>(p => p.OrderId);
 
         // Decimal precision
         modelBuilder.Entity<Product>()
@@ -66,6 +62,17 @@ public class DBContext : IdentityDbContext<User, Role, string>
                 Id = "USER_ROLE_ID",
                 Name = "User",
                 NormalizedName = "USER"
+            });
+        modelBuilder.Entity<PaymentMethod>().HasData(
+            new PaymentMethod
+            {
+                Id = 1,
+                Name = "Credit Card",
+            },
+            new PaymentMethod
+            {
+                Id = 2,
+                Name = "PayPal",
             });
     }
 }

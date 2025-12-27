@@ -521,3 +521,516 @@ WHERE [r].[Token] = @__refreshToken_0
 2025-12-27 19:30:54.969 +02:00 [INF] HTTP GET /api/Identity/refreshToken/DqlNMBVd5O+t5bycoDkH+ZUtCnY2y6vYaNMTWzthLaUKDERQdUrW7%2FgJwvlkShX2if4SchXWtoIzn80bC0bYCw== responded 400 in 24.1420 ms
 2025-12-27 19:30:54.970 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/DqlNMBVd5O+t5bycoDkH+ZUtCnY2y6vYaNMTWzthLaUKDERQdUrW7%2FgJwvlkShX2if4SchXWtoIzn80bC0bYCw== - 400 null application/json; charset=utf-8 28.5591ms
 2025-12-27 19:36:12.017 +02:00 [INF] Application is starting...
+2025-12-27 19:36:12.337 +02:00 [INF] Application is starting...
+2025-12-27 19:36:12.513 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-27 19:36:12.597 +02:00 [INF] Application is running.
+2025-12-27 19:36:12.679 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-27 19:36:12.681 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-27 19:36:12.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-27 19:36:12.816 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 19:36:12.817 +02:00 [INF] Hosting environment: Development
+2025-12-27 19:36:12.818 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-27 19:36:12.921 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 41.4957 ms
+2025-12-27 19:36:12.934 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 143.118ms
+2025-12-27 19:36:12.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 19:36:12.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-27 19:36:12.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-27 19:36:12.944 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.7544 ms
+2025-12-27 19:36:12.947 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 12.1864ms
+2025-12-27 19:36:12.949 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 13.9924ms
+2025-12-27 19:36:12.971 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.358ms
+2025-12-27 19:36:15.123 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-27 19:36:15.131 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.3652 ms
+2025-12-27 19:36:15.132 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 8.888ms
+2025-12-27 19:36:15.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 19:36:15.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-27 19:36:15.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-27 19:36:15.145 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 2.6681ms
+2025-12-27 19:36:15.146 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.2992 ms
+2025-12-27 19:36:15.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 9.0247ms
+2025-12-27 19:36:15.157 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.9778ms
+2025-12-27 19:36:15.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-27 19:36:15.275 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.2869 ms
+2025-12-27 19:36:15.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.4046ms
+2025-12-27 19:36:26.271 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/login - application/json 62
+2025-12-27 19:36:26.276 +02:00 [INF] CORS policy execution successful.
+2025-12-27 19:36:26.294 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-27 19:36:26.309 +02:00 [INF] Route matched with {action = "Login", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:36:26.971 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-27 19:36:27.433 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:27.508 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:27.554 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:36:27.642 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:27.648 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:27.652 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:27.655 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:36:27.680 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:36:27.792 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-12-27 19:36:27.820 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:36:27.829 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation) in 1514.905ms
+2025-12-27 19:36:27.830 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-27 19:36:27.832 +02:00 [INF] HTTP POST /api/Identity/login responded 200 in 1554.9773 ms
+2025-12-27 19:36:27.838 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/login - 200 null application/json; charset=utf-8 1567.4887ms
+2025-12-27 19:36:42.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/ZFtwLnrvGcM%2FwWY1%2FqMVQGEIDMS2NvY295XReZLrHsd%2FVpGcRJmUG7YTXqtHTMV2Yt34wu84j%2F1kirtttYa91w%3D%3D - null null
+2025-12-27 19:36:42.876 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:36:42.883 +02:00 [INF] Route matched with {action = "RefreshToken", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(System.String) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:36:42.930 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:36:42.935 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:36:42.959 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-27 19:36:42.966 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:42.968 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:42.971 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:36:42.975 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:36:42.977 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:36:42.978 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation) in 93.3902ms
+2025-12-27 19:36:42.979 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:36:42.979 +02:00 [INF] HTTP GET /api/Identity/refreshToken/ZFtwLnrvGcM%2FwWY1%2FqMVQGEIDMS2NvY295XReZLrHsd%2FVpGcRJmUG7YTXqtHTMV2Yt34wu84j%2F1kirtttYa91w%3D%3D responded 200 in 104.9798 ms
+2025-12-27 19:36:42.981 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/ZFtwLnrvGcM%2FwWY1%2FqMVQGEIDMS2NvY295XReZLrHsd%2FVpGcRJmUG7YTXqtHTMV2Yt34wu84j%2F1kirtttYa91w%3D%3D - 200 null application/json; charset=utf-8 112.5013ms
+2025-12-27 19:36:54.546 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/login - application/json 62
+2025-12-27 19:36:54.549 +02:00 [INF] CORS policy execution successful.
+2025-12-27 19:36:54.550 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-27 19:36:54.551 +02:00 [INF] Route matched with {action = "Login", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:36:54.581 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:54.586 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:54.590 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:36:54.655 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:54.658 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:54.659 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:36:54.663 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:36:54.666 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:36:54.672 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-12-27 19:36:54.674 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:36:54.675 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation) in 122.1507ms
+2025-12-27 19:36:54.676 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.Login (eCommerce.Presentation)'
+2025-12-27 19:36:54.677 +02:00 [INF] HTTP POST /api/Identity/login responded 200 in 127.4440 ms
+2025-12-27 19:36:54.679 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/login - 200 null application/json; charset=utf-8 132.775ms
+2025-12-27 19:37:10.259 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/FSf68Qtu286wfnD1ZWQYv3856wkKdA2gcb1%2FirlT6iFpt%2BYKtec7BUd0%2Bqd848SmD8MGOAjIbPIdHwOrOm6jxQ%3D%3D - null null
+2025-12-27 19:37:10.262 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:10.262 +02:00 [INF] Route matched with {action = "RefreshToken", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(System.String) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:37:10.267 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:37:10.270 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:37:10.272 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation) in 7.9641ms
+2025-12-27 19:37:10.273 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:10.273 +02:00 [INF] HTTP GET /api/Identity/refreshToken/FSf68Qtu286wfnD1ZWQYv3856wkKdA2gcb1%2FirlT6iFpt%2BYKtec7BUd0%2Bqd848SmD8MGOAjIbPIdHwOrOm6jxQ%3D%3D responded 400 in 12.0238 ms
+2025-12-27 19:37:10.274 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/FSf68Qtu286wfnD1ZWQYv3856wkKdA2gcb1%2FirlT6iFpt%2BYKtec7BUd0%2Bqd848SmD8MGOAjIbPIdHwOrOm6jxQ%3D%3D - 400 null application/json; charset=utf-8 15.7487ms
+2025-12-27 19:37:22.337 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/kP4F8LxwxC9C4q2hYble1u%2FReLn%2BW4fjyznqZfoIY6l06fV6cnSQMoJDZrJ1BMeQdEz4f7TSsY9Us1loqn5b4Q%3D%3D - null null
+2025-12-27 19:37:22.339 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:22.340 +02:00 [INF] Route matched with {action = "RefreshToken", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(System.String) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:37:22.344 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:37:22.347 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:37:22.352 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-27 19:37:22.356 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:37:22.357 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-27 19:37:22.362 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-27 19:37:22.364 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:37:22.365 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:37:22.365 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation) in 24.6755ms
+2025-12-27 19:37:22.366 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:22.367 +02:00 [INF] HTTP GET /api/Identity/refreshToken/kP4F8LxwxC9C4q2hYble1u%2FReLn%2BW4fjyznqZfoIY6l06fV6cnSQMoJDZrJ1BMeQdEz4f7TSsY9Us1loqn5b4Q%3D%3D responded 200 in 28.1459 ms
+2025-12-27 19:37:22.368 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/kP4F8LxwxC9C4q2hYble1u%2FReLn%2BW4fjyznqZfoIY6l06fV6cnSQMoJDZrJ1BMeQdEz4f7TSsY9Us1loqn5b4Q%3D%3D - 200 null application/json; charset=utf-8 31.6783ms
+2025-12-27 19:37:34.545 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/AlJRKz3HQWwF0WZilBgNmTKV9%2FuX906ZmLrUMV00%2FtlHe3jkc9tGC044atvxxUUplNdGlzDD%2Fh2GTCw3cVcZxQ%3D%3D - null null
+2025-12-27 19:37:34.548 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:34.549 +02:00 [INF] Route matched with {action = "RefreshToken", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(System.String) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2025-12-27 19:37:34.554 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-12-27 19:37:34.555 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.LoginResponse'.
+2025-12-27 19:37:34.556 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation) in 6.2064ms
+2025-12-27 19:37:34.557 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.RefreshToken (eCommerce.Presentation)'
+2025-12-27 19:37:34.557 +02:00 [INF] HTTP GET /api/Identity/refreshToken/AlJRKz3HQWwF0WZilBgNmTKV9%2FuX906ZmLrUMV00%2FtlHe3jkc9tGC044atvxxUUplNdGlzDD%2Fh2GTCw3cVcZxQ%3D%3D responded 400 in 9.4977 ms
+2025-12-27 19:37:34.558 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Identity/refreshToken/AlJRKz3HQWwF0WZilBgNmTKV9%2FuX906ZmLrUMV00%2FtlHe3jkc9tGC044atvxxUUplNdGlzDD%2Fh2GTCw3cVcZxQ%3D%3D - 400 null application/json; charset=utf-8 12.8306ms
+2025-12-27 21:32:49.608 +02:00 [INF] Application is starting...
+2025-12-27 21:32:50.644 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 21:33:08.700 +02:00 [INF] Application is starting...
+2025-12-27 21:33:08.801 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 21:33:14.753 +02:00 [INF] Application is starting...
+2025-12-27 21:33:14.928 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-27 21:33:15.024 +02:00 [INF] Application is running.
+2025-12-27 21:33:15.149 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-27 21:33:15.150 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-27 21:33:15.277 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 21:33:15.278 +02:00 [INF] Hosting environment: Development
+2025-12-27 21:33:15.279 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-27 21:33:34.106 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-27 21:33:35.330 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 45.7202 ms
+2025-12-27 21:33:35.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 1235.5237ms
+2025-12-27 21:33:35.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-27 21:33:35.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:33:35.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-27 21:33:35.363 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.3239 ms
+2025-12-27 21:33:35.365 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 6.8709ms
+2025-12-27 21:33:35.367 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 9.5829ms
+2025-12-27 21:33:35.390 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.2866ms
+2025-12-27 21:33:35.612 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-27 21:33:35.633 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.0678 ms
+2025-12-27 21:33:35.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.2636ms
+2025-12-27 21:33:39.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - null null
+2025-12-27 21:33:39.752 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 21:33:39.770 +02:00 [INF] Route matched with {action = "GetPaymentMethods", controller = "Payment", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Cart.GetPaymentMethod]]] GetPaymentMethods() on controller eCommerce.Presentation.Controllers.PaymentController (eCommerce.Presentation).
+2025-12-27 21:33:39.777 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation) in 3.5062ms
+2025-12-27 21:33:39.778 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 21:33:39.779 +02:00 [ERR] Unknown Exception
+System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Application.Services.Interfaces.Cart.IPaymentMethodService' while attempting to activate 'eCommerce.Presentation.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-27 21:33:39.805 +02:00 [ERR] HTTP GET /api/Payment/payment-methods responded 500 in 61.9844 ms
+2025-12-27 21:33:39.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - 500 null application/json 69.7192ms
+2025-12-27 21:35:41.744 +02:00 [INF] Application is starting...
+2025-12-27 21:35:41.895 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-27 21:35:41.989 +02:00 [INF] Application is running.
+2025-12-27 21:35:42.083 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-27 21:35:42.085 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-27 21:35:42.204 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 21:35:42.205 +02:00 [INF] Hosting environment: Development
+2025-12-27 21:35:42.205 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-27 21:35:45.009 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-27 21:35:45.129 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 39.5991 ms
+2025-12-27 21:35:45.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-27 21:35:45.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:35:45.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-27 21:35:45.144 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 136.0644ms
+2025-12-27 21:35:45.148 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.8298 ms
+2025-12-27 21:35:45.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 12.4186ms
+2025-12-27 21:35:45.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 12.5671ms
+2025-12-27 21:35:45.174 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.4306ms
+2025-12-27 21:35:45.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-27 21:35:45.278 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.1850 ms
+2025-12-27 21:35:45.282 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.7303ms
+2025-12-27 21:35:50.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - null null
+2025-12-27 21:35:50.020 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 21:35:50.035 +02:00 [INF] Route matched with {action = "GetPaymentMethods", controller = "Payment", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Cart.GetPaymentMethod]]] GetPaymentMethods() on controller eCommerce.Presentation.Controllers.PaymentController (eCommerce.Presentation).
+2025-12-27 21:35:50.907 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-27 21:35:51.374 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 21:35:51.407 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Cart.GetPaymentMethod, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-27 21:35:51.414 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation) in 1375.1498ms
+2025-12-27 21:35:51.415 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 21:35:51.417 +02:00 [INF] HTTP GET /api/Payment/payment-methods responded 200 in 1406.0031 ms
+2025-12-27 21:35:51.421 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - 200 null application/json; charset=utf-8 1415.9079ms
+2025-12-27 23:14:35.228 +02:00 [INF] Application is starting...
+2025-12-27 23:14:35.632 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 23:14:50.442 +02:00 [INF] Application is starting...
+2025-12-27 23:14:50.551 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 23:15:03.203 +02:00 [INF] Application is starting...
+2025-12-27 23:15:03.423 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-27 23:15:03.522 +02:00 [INF] Application is running.
+2025-12-27 23:15:03.645 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-27 23:15:03.646 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-27 23:15:03.874 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 23:15:03.876 +02:00 [INF] Hosting environment: Development
+2025-12-27 23:15:03.877 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-27 23:15:05.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 23:15:05.575 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 72.6304ms
+2025-12-27 23:15:05.631 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-27 23:15:05.765 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 19.7995 ms
+2025-12-27 23:15:05.770 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.6669ms
+2025-12-27 23:16:13.786 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - null null
+2025-12-27 23:16:13.811 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 23:16:13.831 +02:00 [INF] Route matched with {action = "GetPaymentMethods", controller = "Payment", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Cart.GetPaymentMethod]]] GetPaymentMethods() on controller eCommerce.Presentation.Controllers.PaymentController (eCommerce.Presentation).
+2025-12-27 23:16:15.063 +02:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 23:16:15.097 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Cart.GetPaymentMethod, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-27 23:16:15.106 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation) in 1270.2722ms
+2025-12-27 23:16:15.107 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 23:16:15.108 +02:00 [INF] HTTP GET /api/Payment/payment-methods responded 200 in 1313.9745 ms
+2025-12-27 23:16:15.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - 200 null application/json; charset=utf-8 1326.429ms
+2025-12-27 23:16:34.348 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 163
+2025-12-27 23:16:34.355 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:16:34.359 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:16:34.369 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-27 23:16:34.438 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-27 23:16:34.456 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 85.3829ms
+2025-12-27 23:16:34.458 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:16:34.459 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 102.3421 ms
+2025-12-27 23:16:34.460 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/problem+json; charset=utf-8 112.1226ms
+2025-12-27 23:16:43.905 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 165
+2025-12-27 23:16:43.910 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:16:43.911 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:16:43.912 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-27 23:16:43.916 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-27 23:16:43.917 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 3.8066ms
+2025-12-27 23:16:43.918 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:16:43.919 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 8.2469 ms
+2025-12-27 23:16:43.920 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/problem+json; charset=utf-8 14.7955ms
+2025-12-27 23:17:01.318 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Category/add - application/json 23
+2025-12-27 23:17:01.324 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:17:01.325 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-27 23:17:01.332 +02:00 [INF] Route matched with {action = "Add", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Category.CreateCategoryDto) on controller eCommerce.Presentation.Controllers.CategoryController (eCommerce.Presentation).
+2025-12-27 23:17:01.619 +02:00 [INF] Executed DbCommand (132ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-12-27 23:17:01.646 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-27 23:17:01.649 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation) in 315.3817ms
+2025-12-27 23:17:01.651 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CategoryController.Add (eCommerce.Presentation)'
+2025-12-27 23:17:01.652 +02:00 [INF] HTTP POST /api/Category/add responded 200 in 326.9643 ms
+2025-12-27 23:17:01.654 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Category/add - 200 null application/json; charset=utf-8 335.7033ms
+2025-12-27 23:17:18.976 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 167
+2025-12-27 23:17:18.979 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:17:18.980 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:17:18.981 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-27 23:17:19.111 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [CreatedAt], [Description], [Image], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-12-27 23:17:19.121 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-27 23:17:19.122 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 138.7691ms
+2025-12-27 23:17:19.123 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-27 23:17:19.123 +02:00 [INF] HTTP POST /api/Product/add responded 200 in 142.9641 ms
+2025-12-27 23:17:19.125 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 200 null application/json; charset=utf-8 149.054ms
+2025-12-27 23:17:36.693 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Product/all - null null
+2025-12-27 23:17:36.696 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation)'
+2025-12-27 23:17:36.699 +02:00 [INF] Route matched with {action = "GetAll", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-27 23:17:36.713 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-12-27 23:17:36.724 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.GetProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-27 23:17:36.730 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation) in 30.3414ms
+2025-12-27 23:17:36.732 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.GetAll (eCommerce.Presentation)'
+2025-12-27 23:17:36.733 +02:00 [INF] HTTP GET /api/Product/all responded 200 in 37.3548 ms
+2025-12-27 23:17:36.734 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Product/all - 200 null application/json; charset=utf-8 41.6843ms
+2025-12-27 23:17:44.020 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 98
+2025-12-27 23:17:44.023 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:17:44.024 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:17:44.026 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.Cart.Checkout) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2025-12-27 23:17:44.030 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 2.2634ms
+2025-12-27 23:17:44.032 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:17:44.033 +02:00 [ERR] Unknown Exception
+System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Application.Services.Interfaces.Cart.ICartService' while attempting to activate 'eCommerce.Presentation.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method232(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-12-27 23:17:44.078 +02:00 [ERR] HTTP POST /api/Cart/checkout responded 500 in 53.5955 ms
+2025-12-27 23:17:44.079 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 500 null application/json 59.55ms
+2025-12-27 23:18:54.663 +02:00 [INF] Application is starting...
+2025-12-27 23:18:54.820 +02:00 [ERR] Application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 23:19:11.956 +02:00 [INF] Application is starting...
+2025-12-27 23:19:12.069 +02:00 [ERR] Application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 23:19:35.308 +02:00 [INF] Application is starting...
+2025-12-27 23:19:35.440 +02:00 [ERR] Application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67

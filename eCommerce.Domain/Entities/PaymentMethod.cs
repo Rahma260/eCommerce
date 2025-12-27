@@ -1,9 +1,9 @@
 ﻿namespace eCommerce.Domain.Entities
 {
-    public enum PaymentMethod
+    public class PaymentMethod
     {
-        Credit,
-        PayPal
+       public int Id { get; set; }
+       public string Name { get; set; } = string.Empty;
     }
 
 }

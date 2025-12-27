@@ -6,8 +6,7 @@ namespace eCommerce.Domain.Interfaces
     {
         IGenericRepository<Product> Products { get; }
         IGenericRepository<Category> Categories { get; }
-
-        IGenericRepository<Cart> Carts { get; }
+     //   IGenericRepository<Cart> Carts { get; }
         IGenericRepository<CartItem> CartItems { get; }
         IGenericRepository<Order> Orders { get; }
         IGenericRepository<OrderItem> OrderItems { get; }
@@ -17,6 +16,8 @@ namespace eCommerce.Domain.Interfaces
         IGenericRepository<UserRole> UserRoles { get; }
         IGenericRepository<RefreshToken> RefreshToken { get; }
         IGenericRepository<Brand> Brands { get; }
+        IGenericRepository<PaymentMethod> PaymentMethods { get; }
+
         Task<int> SaveAsync();
     }
 }

@@ -16,6 +16,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using eCommerce.Domain.Interfaces.Identity;
 using eCommerce.Infrastructure.Repositories.Identity;
+using eCommerce.Domain.Interfaces.Cart;
+using eCommerce.Infrastructure.Repositories.Cart;
+using eCommerce.Application.Services.Interfaces.Cart;
 
 
 namespace eCommerce.Infrastructure.DependencyInjection
@@ -87,6 +90,11 @@ namespace eCommerce.Infrastructure.DependencyInjection
             services.AddScoped<ITokenManagement, TokenManagement>();
             services.AddScoped<IRoleManagement, RoleManagement>();
             services.AddScoped<IUserManagement, UserManagement>();
+            services.AddScoped<IPaymentMethod, PaymentMethodRepository>();
+            services.AddScoped<IPaymentService, StripePaymentService>();
+            services.AddScoped<ICart, CartRepository>();
+
+            Stripe.StripeConfiguration.ApiKey = configuration["Stripe:SecretKey"];
             return services;
         }
         //extension method for IApplicationBuilder to use global exception handling middleware 
