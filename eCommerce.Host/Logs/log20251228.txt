@@ -1,0 +1,150 @@
+2025-12-28 13:38:39.993 +02:00 [INF] Application is starting...
+2025-12-28 13:38:42.564 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:38:42.936 +02:00 [INF] Application is running.
+2025-12-28 13:38:43.093 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-28 13:38:43.094 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-28 13:38:43.278 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 13:38:43.280 +02:00 [INF] Hosting environment: Development
+2025-12-28 13:38:43.281 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-28 13:43:59.482 +02:00 [INF] Application is starting...
+2025-12-28 13:43:59.868 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:43:59.998 +02:00 [INF] Application is running.
+2025-12-28 13:44:00.191 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-28 13:44:00.193 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-28 13:44:00.368 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 13:44:00.370 +02:00 [INF] Hosting environment: Development
+2025-12-28 13:44:00.372 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-28 13:44:00.572 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/ - null null
+2025-12-28 13:44:02.971 +02:00 [INF] HTTP GET / responded 404 in 362.8560 ms
+2025-12-28 13:44:02.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/ - 404 0 null 2422.9014ms
+2025-12-28 13:44:03.003 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/, Response status code: 404
+2025-12-28 13:44:05.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/ - null null
+2025-12-28 13:44:05.595 +02:00 [INF] HTTP GET / responded 404 in 2.4084 ms
+2025-12-28 13:44:05.602 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/ - 404 0 null 26.8352ms
+2025-12-28 13:44:05.607 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/, Response status code: 404
+2025-12-28 13:44:12.802 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-28 13:44:12.886 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 71.0773 ms
+2025-12-28 13:44:12.891 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 89.4029ms
+2025-12-28 13:44:12.904 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 13:44:12.904 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-28 13:44:12.920 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.2348 ms
+2025-12-28 13:44:12.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 22.0321ms
+2025-12-28 13:44:12.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-28 13:44:12.931 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 25.9926ms
+2025-12-28 13:44:13.019 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.8869ms
+2025-12-28 13:44:13.072 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-28 13:44:13.105 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.3925 ms
+2025-12-28 13:44:13.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.4756ms
+2025-12-28 13:44:50.395 +02:00 [INF] Application is starting...
+2025-12-28 13:44:51.485 +02:00 [INF] Application is starting...
+2025-12-28 13:44:51.745 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:44:51.889 +02:00 [INF] Application is running.
+2025-12-28 13:44:51.974 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-28 13:44:51.998 +02:00 [ERR] Application failed to start correctly
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 108
+2025-12-28 13:45:07.445 +02:00 [INF] Application is starting...
+2025-12-28 13:45:07.661 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:45:07.800 +02:00 [INF] Application is running.
+2025-12-28 13:45:07.881 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-28 13:45:07.897 +02:00 [ERR] Application failed to start correctly
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 108
+2025-12-28 13:45:15.428 +02:00 [INF] Application is starting...
+2025-12-28 13:45:15.641 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:45:15.758 +02:00 [INF] Application is running.
+2025-12-28 13:45:15.845 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-28 13:45:15.859 +02:00 [ERR] Application failed to start correctly
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 108
+2025-12-28 13:45:31.592 +02:00 [INF] Application is starting...
+2025-12-28 13:45:31.814 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:45:31.932 +02:00 [INF] Application is running.
+2025-12-28 13:45:32.083 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-28 13:45:32.085 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-28 13:45:32.256 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 13:45:32.259 +02:00 [INF] Hosting environment: Development
+2025-12-28 13:45:32.261 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-28 13:45:32.882 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/ - null null
+2025-12-28 13:45:33.133 +02:00 [INF] HTTP GET / responded 404 in 16.5814 ms
+2025-12-28 13:45:33.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/ - 404 0 null 283.8538ms
+2025-12-28 13:45:33.174 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/, Response status code: 404
+2025-12-28 13:47:07.648 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/ - null null
+2025-12-28 13:47:07.665 +02:00 [INF] HTTP GET / responded 404 in 0.7653 ms
+2025-12-28 13:47:07.671 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/ - 404 0 null 22.7118ms
+2025-12-28 13:47:07.675 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/, Response status code: 404
+2025-12-28 13:47:38.486 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-28 13:47:38.617 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 118.4123 ms
+2025-12-28 13:47:38.625 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 138.1553ms
+2025-12-28 13:47:38.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 13:47:38.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-28 13:47:38.657 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.6721 ms
+2025-12-28 13:47:38.661 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-28 13:47:38.678 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 38.4987ms
+2025-12-28 13:47:38.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 38.758ms
+2025-12-28 13:47:38.729 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.7415ms
+2025-12-28 13:47:38.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-28 13:47:38.865 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 33.4997 ms
+2025-12-28 13:47:38.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.5157ms
+2025-12-28 13:47:39.452 +02:00 [INF] Application is starting...
+2025-12-28 13:47:39.663 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 13:47:39.809 +02:00 [INF] Application is running.
+2025-12-28 13:47:40.048 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-28 13:47:40.053 +02:00 [INF] Now listening on: http://localhost:5026

@@ -1034,3 +1034,80 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
    at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
    at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 67
+2025-12-27 23:21:47.150 +02:00 [INF] Application is starting...
+2025-12-27 23:21:47.322 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-27 23:21:47.408 +02:00 [INF] Application is running.
+2025-12-27 23:21:47.495 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-27 23:21:47.497 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-27 23:21:47.632 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 23:21:47.633 +02:00 [INF] Hosting environment: Development
+2025-12-27 23:21:47.635 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-27 23:21:59.023 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-27 23:21:59.193 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 41.0176 ms
+2025-12-27 23:21:59.206 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-27 23:21:59.206 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 23:21:59.213 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 192.9331ms
+2025-12-27 23:21:59.216 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.6926 ms
+2025-12-27 23:21:59.222 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-27 23:21:59.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 20.8949ms
+2025-12-27 23:21:59.231 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 24.8775ms
+2025-12-27 23:21:59.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.572ms
+2025-12-27 23:21:59.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-27 23:21:59.345 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.0016 ms
+2025-12-27 23:21:59.348 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5892ms
+2025-12-27 23:22:14.056 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 99
+2025-12-27 23:22:14.069 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:22:14.092 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:22:14.108 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.Cart.Checkout) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2025-12-27 23:22:15.292 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-12-27 23:22:15.330 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 23:22:15.969 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-27 23:22:15.978 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 1864.8613ms
+2025-12-27 23:22:15.979 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:22:15.980 +02:00 [INF] HTTP POST /api/Cart/checkout responded 400 in 1906.7893 ms
+2025-12-27 23:22:15.985 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 400 null application/json; charset=utf-8 1929.0442ms
+2025-12-27 23:22:29.923 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 99
+2025-12-27 23:22:29.928 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:22:29.930 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:22:29.930 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.Cart.Checkout) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2025-12-27 23:22:29.976 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-12-27 23:22:29.982 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 23:22:29.984 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-27 23:22:29.985 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 53.3001ms
+2025-12-27 23:22:29.986 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:22:29.987 +02:00 [INF] HTTP POST /api/Cart/checkout responded 400 in 56.8769 ms
+2025-12-27 23:22:29.988 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 400 null application/json; charset=utf-8 64.2528ms
+2025-12-27 23:22:45.781 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - null null
+2025-12-27 23:22:45.791 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 23:22:45.805 +02:00 [INF] Route matched with {action = "GetPaymentMethods", controller = "Payment", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Cart.GetPaymentMethod]]] GetPaymentMethods() on controller eCommerce.Presentation.Controllers.PaymentController (eCommerce.Presentation).
+2025-12-27 23:22:45.826 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 23:22:45.830 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Cart.GetPaymentMethod, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-27 23:22:45.831 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation) in 23.2196ms
+2025-12-27 23:22:45.832 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.PaymentController.GetPaymentMethods (eCommerce.Presentation)'
+2025-12-27 23:22:45.834 +02:00 [INF] HTTP GET /api/Payment/payment-methods responded 200 in 43.2739 ms
+2025-12-27 23:22:45.836 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Payment/payment-methods - 200 null application/json; charset=utf-8 55.5149ms
+2025-12-27 23:23:04.025 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 99
+2025-12-27 23:23:04.029 +02:00 [INF] CORS policy execution successful.
+2025-12-27 23:23:04.031 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:23:04.033 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.Cart.Checkout) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2025-12-27 23:23:04.048 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-12-27 23:23:04.051 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2025-12-27 23:23:04.567 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-27 23:23:04.568 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 534.0389ms
+2025-12-27 23:23:04.569 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2025-12-27 23:23:04.570 +02:00 [INF] HTTP POST /api/Cart/checkout responded 400 in 539.5231 ms
+2025-12-27 23:23:04.572 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 400 null application/json; charset=utf-8 546.8097ms

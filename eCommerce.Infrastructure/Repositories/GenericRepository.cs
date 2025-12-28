@@ -25,6 +25,7 @@ namespace eCommerce.Infrastructure.Repositories
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
+            //use AsNoTracking() for read-only queries
             return await context.Set<TEntity>().AsNoTracking().ToListAsync();
         }
 
