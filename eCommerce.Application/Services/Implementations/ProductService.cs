@@ -1,25 +1,24 @@
 ﻿using AutoMapper;
 using eCommerce.Application.DTOs;
+using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
 using eCommerce.Application.Services.Interfaces;
+using eCommerce.Application.Validators;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces;
+using FluentValidation;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class ProductService : IProductService
+    public class ProductService(IUnitOfWork _unitOfWork, IMapper _mapper, IValidator<CreateProductDto> createProductValidator,
+        IValidator<UpdateProductDto> updateProductValidator,
+        IValidationService validationService) : IProductService
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
-
-        public ProductService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
-
         public async Task<ServiceResponse> AddAsync(CreateProductDto entity)
         {
+            var validationResult = await validationService.ValidateAsync(entity, createProductValidator);
+            if (!validationResult.success) return validationResult;
+            
             var mappedData = _mapper.Map<Product>(entity);
 
             await _unitOfWork.Products.AddAsync(mappedData);
@@ -59,6 +58,9 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> UpdateAsync(UpdateProductDto entity)
         {
+            var validationResult = await validationService.ValidateAsync(entity, updateProductValidator);
+            if (!validationResult.success) return validationResult;
+
             var mappedData = _mapper.Map<Product>(entity);
 
             var result = await _unitOfWork.Products.UpdateAsync(mappedData);

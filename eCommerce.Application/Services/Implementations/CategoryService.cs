@@ -2,25 +2,26 @@
 using eCommerce.Application.DTOs;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
+using eCommerce.Application.DTOs.User;
 using eCommerce.Application.Services.Interfaces;
+using eCommerce.Application.Validators;
 using eCommerce.Domain.Entities;
+using eCommerce.Domain.Entities.Identity;
 using eCommerce.Domain.Interfaces;
+using FluentValidation;
 
 namespace eCommerce.Application.Services.Implementations
 {
-    public class CategoryService : ICategoryService
-    {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
-
-        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public class CategoryService(IUnitOfWork _unitOfWork, IMapper _mapper, IValidator<CreateCategoryDto> createCategoryValidator,
+        IValidator<UpdateCategoryDto> updateCategoryValidator,
+        IValidationService validationService) : ICategoryService
+    {   
 
         public async Task<ServiceResponse> AddAsync(CreateCategoryDto entity)
         {
+            var validationResult = await validationService.ValidateAsync(entity, createCategoryValidator);
+            if (!validationResult.success) return validationResult;
+
             var mappedData = _mapper.Map<Category>(entity);
 
             await _unitOfWork.Categories.AddAsync(mappedData);
@@ -60,6 +61,9 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> UpdateAsync(UpdateCategoryDto entity)
         {
+            var validationResult = await validationService.ValidateAsync(entity, updateCategoryValidator);
+            if (!validationResult.success) return validationResult;
+
             var mappedData = _mapper.Map<Category>(entity);
 
             var result = await _unitOfWork.Categories.UpdateAsync(mappedData);

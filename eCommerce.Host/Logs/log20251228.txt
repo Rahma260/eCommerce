@@ -148,3 +148,36 @@ System.InvalidOperationException: A path base can only be configured using IAppl
 2025-12-28 13:47:39.809 +02:00 [INF] Application is running.
 2025-12-28 13:47:40.048 +02:00 [INF] Now listening on: https://localhost:7221
 2025-12-28 13:47:40.053 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-28 13:47:40.282 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 13:47:40.285 +02:00 [INF] Hosting environment: Development
+2025-12-28 13:47:40.287 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-28 14:06:53.642 +02:00 [INF] Application is starting...
+2025-12-28 14:06:56.071 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 14:06:56.402 +02:00 [INF] Application is running.
+2025-12-28 14:06:56.822 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-28 14:06:56.825 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-28 14:06:57.012 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 14:06:57.015 +02:00 [INF] Hosting environment: Development
+2025-12-28 14:06:57.017 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-28 14:06:57.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-12-28 14:06:58.916 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 67.5926 ms
+2025-12-28 14:06:58.934 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 1919.5061ms
+2025-12-28 14:06:59.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-12-28 14:06:59.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-12-28 14:06:59.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 14:06:59.013 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.3907 ms
+2025-12-28 14:06:59.018 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 17.2753ms
+2025-12-28 14:06:59.025 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 24.8716ms
+2025-12-28 14:06:59.064 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.0447ms
+2025-12-28 14:06:59.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-12-28 14:06:59.463 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 16.1668 ms
+2025-12-28 14:06:59.469 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.5793ms
+2025-12-28 14:07:12.351 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 163
+2025-12-28 14:07:12.366 +02:00 [INF] CORS policy execution successful.
+2025-12-28 14:07:12.664 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:07:12.695 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-28 14:07:13.455 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-28 14:07:13.479 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 779.2949ms
+2025-12-28 14:07:13.483 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:07:13.485 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 1114.8305 ms
+2025-12-28 14:07:13.488 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/problem+json; charset=utf-8 1136.7072ms
