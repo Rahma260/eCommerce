@@ -38,7 +38,7 @@ namespace eCommerce.Infrastructure.Repositories.Cart
                 }
                 var options = new SessionCreateOptions
                 {
-                    PaymentMethodTypes = ["usd"],
+                    PaymentMethodTypes = new List<string> { "card" },
                     LineItems = lineItems,
                     Mode = "payment",
                     SuccessUrl = "https://localhost:7221/payment-success",
