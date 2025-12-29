@@ -1,4 +1,5 @@
 ﻿using eCommerce.Domain.Entities.Identity;
+using eCommerce.Domain.Interfaces;
 using eCommerce.Domain.Interfaces.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -11,17 +12,23 @@ using System.Security.Cryptography;
 
 namespace eCommerce.Infrastructure.Repositories.Identity
 {
-    public class TokenManagement(IConfiguration configuration, DBContext dBContext) : ITokenManagement
+    public class TokenManagement(
+      IConfiguration configuration,
+      IUnitOfWork unitOfWork
+        ) : ITokenManagement
     {
-        public Task<int> AddRefreshToken(string refreshToken, string userId)
+
+        public async Task<int> AddRefreshToken(string refreshToken, string userId)
         {
-            dBContext.RefreshToken.Add(new RefreshToken
+            await unitOfWork.RefreshToken.AddAsync(new RefreshToken
             {
                 Token = refreshToken,
                 UserId = userId,
             });
-            return dBContext.SaveChangesAsync();
+
+            return await unitOfWork.SaveAsync();
         }
+
 
         public string GenerateToken(List<Claim> claims)
         {
@@ -60,21 +67,26 @@ namespace eCommerce.Infrastructure.Repositories.Identity
 
         public async Task<string> GetUserIdByRefreshToken(string refreshToken)
         {
-            return (await dBContext.RefreshToken.FirstOrDefaultAsync(rt => rt.Token == refreshToken))!.UserId;
+            var token = await unitOfWork.RefreshToken.GetByTokenAsync(refreshToken);
+            return token!.UserId;
         }
 
-        public async Task<int> UpdateRefreshToken(string refreshToken, string userId)
+
+        public async Task<int> UpdateRefreshToken(string oldToken, string newToken)
         {
-            var user = await dBContext.RefreshToken.FirstOrDefaultAsync(rt => rt.Token == refreshToken);
-            if (user == null) return -1;
-            user.Token = refreshToken;
-            return await dBContext.SaveChangesAsync();
+            var token = await unitOfWork.RefreshToken.GetByTokenAsync(oldToken);
+            if (token == null) return -1;
+
+            token.Token = newToken;
+            return await unitOfWork.SaveAsync();
         }
+
 
         public async Task<bool> ValidateRefreshToken(string refreshToken)
         {
-            var user = await dBContext.RefreshToken.FirstOrDefaultAsync(rt => rt.Token == refreshToken);
-            return user != null;
-        }        
+            var token = await unitOfWork.RefreshToken.GetByTokenAsync(refreshToken);
+            return token != null;
+        }
+
     }
 }

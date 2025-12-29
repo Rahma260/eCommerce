@@ -29,9 +29,9 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            var result = await _unitOfWork.Products.DeleteAsync(id);
-            if (result == 0)
-                return new ServiceResponse(false, "Product not found");
+            await _unitOfWork.Products.DeleteAsync(id);
+            //if (result == 0)
+            //    return new ServiceResponse(false, "Product not found");
 
             await _unitOfWork.SaveAsync();
             return new ServiceResponse(true, "Product deleted successfully");
@@ -63,9 +63,9 @@ namespace eCommerce.Application.Services.Implementations
 
             var mappedData = _mapper.Map<Product>(entity);
 
-            var result = await _unitOfWork.Products.UpdateAsync(mappedData);
-            if (result == 0)
-                return new ServiceResponse(false, "Product not found");
+            await _unitOfWork.Products.UpdateAsync(mappedData);
+            //if (result == 0)
+            //    return new ServiceResponse(false, "Product not found");
 
             await _unitOfWork.SaveAsync();
             return new ServiceResponse(true, "Product updated successfully");

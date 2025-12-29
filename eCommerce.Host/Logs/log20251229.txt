@@ -1,0 +1,9 @@
+2025-12-29 19:40:52.577 +02:00 [INF] Application is starting...
+2025-12-29 19:40:55.064 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-29 19:40:55.506 +02:00 [INF] Application is running.
+2025-12-29 19:40:55.709 +02:00 [INF] Now listening on: https://localhost:7221
+2025-12-29 19:40:55.713 +02:00 [INF] Now listening on: http://localhost:5026
+2025-12-29 19:40:55.900 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-29 19:40:55.902 +02:00 [INF] Hosting environment: Development
+2025-12-29 19:40:55.903 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2025-12-29 19:40:57.710 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null

@@ -181,3 +181,27 @@ System.InvalidOperationException: A path base can only be configured using IAppl
 2025-12-28 14:07:13.483 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
 2025-12-28 14:07:13.485 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 1114.8305 ms
 2025-12-28 14:07:13.488 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/problem+json; charset=utf-8 1136.7072ms
+2025-12-28 14:11:00.679 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 165
+2025-12-28 14:11:00.693 +02:00 [INF] CORS policy execution successful.
+2025-12-28 14:11:00.695 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:11:00.699 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-28 14:11:03.224 +02:00 [INF] Executed DbCommand (304ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [CreatedAt], [Description], [Image], [Name], [Price], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-12-28 14:11:03.278 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.ServiceResponse'.
+2025-12-28 14:11:03.283 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 2579.7408ms
+2025-12-28 14:11:03.286 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:11:03.288 +02:00 [INF] HTTP POST /api/Product/add responded 200 in 2592.6225 ms
+2025-12-28 14:11:03.292 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 200 null application/json; charset=utf-8 2613.3521ms
+2025-12-28 14:11:28.217 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Product/add - application/json 166
+2025-12-28 14:11:28.228 +02:00 [INF] CORS policy execution successful.
+2025-12-28 14:11:28.230 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:11:28.231 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerce.Application.DTOs.Product.CreateProductDto) on controller eCommerce.Presentation.Controllers.ProductController (eCommerce.Presentation).
+2025-12-28 14:11:28.244 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-28 14:11:28.250 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation) in 16.0067ms
+2025-12-28 14:11:28.253 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProductController.Add (eCommerce.Presentation)'
+2025-12-28 14:11:28.255 +02:00 [INF] HTTP POST /api/Product/add responded 400 in 25.1826 ms
+2025-12-28 14:11:28.257 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Product/add - 400 null application/problem+json; charset=utf-8 39.4099ms

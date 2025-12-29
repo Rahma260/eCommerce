@@ -32,9 +32,9 @@ namespace eCommerce.Application.Services.Implementations
 
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            var result = await _unitOfWork.Categories.DeleteAsync(id);
-            if (result == 0)
-                return new ServiceResponse(false, "Category not found");
+            await _unitOfWork.Categories.DeleteAsync(id);
+            //if (result == 0)
+            //    return new ServiceResponse(false, "Category not found");
 
             await _unitOfWork.SaveAsync();
             return new ServiceResponse(true, "Category deleted successfully");
@@ -66,9 +66,9 @@ namespace eCommerce.Application.Services.Implementations
 
             var mappedData = _mapper.Map<Category>(entity);
 
-            var result = await _unitOfWork.Categories.UpdateAsync(mappedData);
-            if (result == 0)
-                return new ServiceResponse(false, "Category not found");
+            await _unitOfWork.Categories.UpdateAsync(mappedData);
+            //if (result == 0)
+            //    return new ServiceResponse(false, "Category not found");
 
             await _unitOfWork.SaveAsync();
             return new ServiceResponse(true, "Category updated successfully");
