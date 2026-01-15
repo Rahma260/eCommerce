@@ -1,0 +1,110 @@
+2026-01-02 17:20:13.362 +02:00 [INF] Application is starting...
+2026-01-02 17:20:13.464 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 111
+2026-01-02 17:20:32.831 +02:00 [INF] Application is starting...
+2026-01-02 17:20:32.987 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-02 17:20:33.070 +02:00 [INF] Application is running.
+2026-01-02 17:20:33.153 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-02 17:20:33.154 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-02 17:20:33.285 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-02 17:20:33.286 +02:00 [INF] Hosting environment: Development
+2026-01-02 17:20:33.287 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-02 17:20:33.664 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-02 17:20:33.771 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 38.4454 ms
+2026-01-02 17:20:33.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-02 17:20:33.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-02 17:20:33.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-02 17:20:33.786 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 122.1397ms
+2026-01-02 17:20:33.788 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.7081 ms
+2026-01-02 17:20:33.792 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 10.0063ms
+2026-01-02 17:20:33.796 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 14.6561ms
+2026-01-02 17:20:33.818 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.3774ms
+2026-01-02 17:20:33.889 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-02 17:20:33.911 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.7210 ms
+2026-01-02 17:20:33.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.1307ms
+2026-01-02 17:20:37.984 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-02 17:20:37.990 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.4299 ms
+2026-01-02 17:20:37.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 8.0628ms
+2026-01-02 17:20:38.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-02 17:20:38.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-02 17:20:38.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-02 17:20:38.010 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 6.1064ms
+2026-01-02 17:20:38.011 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.5153 ms
+2026-01-02 17:20:38.016 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 12.0568ms
+2026-01-02 17:20:38.091 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.9405ms
+2026-01-02 17:20:38.121 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-02 17:20:38.136 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.3088 ms
+2026-01-02 17:20:38.138 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.594ms
+2026-01-02 17:20:48.950 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-02 17:20:48.956 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.0566 ms
+2026-01-02 17:20:48.959 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 8.6341ms
+2026-01-02 17:20:48.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-02 17:20:48.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-02 17:20:48.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-02 17:20:48.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 2.1779ms
+2026-01-02 17:20:48.975 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.1406 ms
+2026-01-02 17:20:48.980 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 10.4565ms
+2026-01-02 17:20:48.981 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.7843ms
+2026-01-02 17:20:49.034 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-02 17:20:49.044 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.8876 ms
+2026-01-02 17:20:49.045 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.7415ms
+2026-01-02 17:20:51.812 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-02 17:20:51.816 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.2270 ms
+2026-01-02 17:20:51.818 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 5.3398ms
+2026-01-02 17:20:51.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-02 17:20:51.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-02 17:20:51.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-02 17:20:51.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.27ms
+2026-01-02 17:20:51.830 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.2448ms
+2026-01-02 17:20:51.832 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.6141 ms
+2026-01-02 17:20:51.836 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 10.1875ms
+2026-01-02 17:20:51.881 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-02 17:20:51.888 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.7762 ms
+2026-01-02 17:20:51.889 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.9268ms
+2026-01-02 17:20:59.653 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Identity/google - application/json 1167
+2026-01-02 17:20:59.659 +02:00 [INF] CORS policy execution successful.
+2026-01-02 17:20:59.692 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.IdentityController.GoogleLogin (eCommerce.Presentation)'
+2026-01-02 17:20:59.713 +02:00 [INF] Route matched with {action = "GoogleLogin", controller = "Identity", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(eCommerce.Application.DTOs.User.GoogleLoginRequestDto) on controller eCommerce.Presentation.Controllers.IdentityController (eCommerce.Presentation).
+2026-01-02 17:21:01.146 +02:00 [INF] Executed DbCommand (43ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-02 17:21:01.195 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-02 17:21:01.203 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.IdentityController.GoogleLogin (eCommerce.Presentation) in 1486.1904ms
+2026-01-02 17:21:01.204 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.IdentityController.GoogleLogin (eCommerce.Presentation)'
+2026-01-02 17:21:01.206 +02:00 [ERR] Unknown Exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'password')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at eCommerce.Infrastructure.Repositories.Identity.UserManagement.CreateUser(User user) in E:\eCommerce\eCommerce.Infrastructure\Repositories\Identity\UserManagement.cs:line 16
+   at eCommerce.Application.Services.Interfaces.Identity.GoogleLoginHandler.HandleAsync(String idToken) in E:\eCommerce\eCommerce.Application\Services\Interfaces\Identity\GoogleLoginHandler.cs:line 43
+   at eCommerce.Presentation.Controllers.IdentityController.GoogleLogin(GoogleLoginRequestDto request) in E:\eCommerce\eCommerce.Host\Controllers\IdentityController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-01-02 17:21:01.247 +02:00 [ERR] HTTP POST /api/Identity/google responded 500 in 1586.3808 ms
+2026-01-02 17:21:01.257 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Identity/google - 500 null application/json 1603.2472ms

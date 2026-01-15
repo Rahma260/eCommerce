@@ -11,10 +11,10 @@ namespace eCommerce.Infrastructure.Repositories.Cart
 {
     public class CartRepository(IUnitOfWork unitOfWork) : ICart
     {
-        public Task<int> SaveCheckoutHistory(IEnumerable<Order> checkouts)
+        public Task<int> SaveCheckoutHistory(IEnumerable<Checkout> checkouts)
         {
             foreach(var checkout in checkouts)
-                unitOfWork.Orders.AddAsync(checkout);
+                unitOfWork.Checkouts.AddAsync(checkout);
 
             return unitOfWork.SaveAsync();
         }

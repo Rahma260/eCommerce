@@ -1,12 +1,17 @@
 using eCommerce.Application.DependencyInjection;
-using eCommerce.Application.Validators;
+using eCommerce.Application.DTOs;
 using eCommerce.Infrastructure.DependencyInjection;
-using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.OpenApi;
+using eCommerce.Infrastructure.Middleware;
+using eCommerce.Presentation;
+using Hangfire;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,27 +28,28 @@ Log.Logger.Information("Application is starting...");
 // Add services to the container.
 builder.Services
     .AddControllers();
-    //.AddFluentValidation(fv =>
-    //{
-    //    fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryValidator>();
-    //    fv.RegisterValidatorsFromAssemblyContaining<UpdateCategoryValidator>();
-    //    fv.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>();
-    //    fv.RegisterValidatorsFromAssemblyContaining<UpdateProductValidator>();
-    //});
 
 // Add Swagger/OpenAPI services
 builder.Services.AddEndpointsApiExplorer(); // Required for minimal APIs
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ECommerce", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "ECommerce",
+        Version = "v1"
+    });
+
+    // Define the JWT security scheme
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
-        Description = "Enter JWT token",
         Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
+        Type = SecuritySchemeType.ApiKey, // <-- change to ApiKey so we can control input
+        Scheme = "Bearer",
+        In = ParameterLocation.Header,
+        Description = "Enter JWT token only (without 'Bearer ')."
     });
+
+    // Add security requirement
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -55,15 +61,99 @@ builder.Services.AddSwaggerGen(c =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
+
+    // Optional: automatically add 'Bearer ' prefix to the header
+    c.OperationFilter<SwaggerAddBearerPrefixOperationFilter>();
 });
+
+
 // For db configuration and repository services
 builder.Services.AddInfrastructureService(builder.Configuration);
+//add authentication in program.cs not infrastructure layer
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            // Try to read token directly from header without "Bearer "
+            if (context.Request.Headers.TryGetValue("Authorization", out var token))
+            {
+                context.Token = token;
+            }
+            return Task.CompletedTask;
+        }
+    };
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["JWT:Issuer"],
+        ValidAudience = builder.Configuration["JWT:Audience"],
+        IssuerSigningKey =
+            new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!)
+            ),
+        ClockSkew = TimeSpan.Zero
+    };
+})
+.AddCookie()
+.AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"]!;
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"]!;
+    options.SaveTokens = true;
+
+    options.Scope.Clear();
+    options.Scope.Add("openid");
+    options.Scope.Add("profile");
+    options.Scope.Add("email");
+
+    options.CallbackPath = "/api/Auth/google-callback";
+    options.CorrelationCookie.SameSite = SameSiteMode.None;
+    options.CorrelationCookie.SecurePolicy = CookieSecurePolicy.Always;
+});
+
+//add cloudinary settings 
+builder.Services.Configure<CloudinarySettings>(
+    builder.Configuration.GetSection("CloudinarySettings"));
+
+//add email settings
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection("EmailSettings"));
+
+builder.Services.AddHangfire(config =>
+{
+    config.UseSqlServerStorage(
+        builder.Configuration.GetConnectionString("con"));
+});
+
+builder.Services.AddHangfireServer();
+
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration["Redis:ConnectionString"];
+    options.ConfigurationOptions = new StackExchange.Redis.ConfigurationOptions
+    {
+        EndPoints = { builder.Configuration["Redis:ConnectionString"] },
+        ConnectTimeout = 10000, 
+        SyncTimeout = 10000
+    };
+});
 
 // For mapping configuration and application services
 builder.Services.AddApplicationServices();
+
 
 //add cors
 builder.Services.AddCors(builder =>
@@ -98,11 +188,16 @@ try
         });
     }
     // Use global exception handling middleware
-    app.UseInfrastructureService();
+  //  app.UseInfrastructureService();
     app.UseHttpsRedirection();
+    app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
-
+    app.UseHangfireDashboard("/hangfire", new DashboardOptions
+    {
+        DashboardTitle = "eCommerce Jobs Dashboard",
+    });
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
     //log
     Log.Logger.Information("Application is running.");
     app.Run();

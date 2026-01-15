@@ -1,0 +1,1441 @@
+2026-01-12 17:00:41.692 +02:00 [INF] Application is starting...
+2026-01-12 17:00:43.744 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:00:44.491 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:00:47.251 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:00:47.272 +02:00 [INF] Application is running.
+2026-01-12 17:00:47.475 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:00:47.476 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:00:47.604 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:00:47.605 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:00:47.605 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:00:47.613 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:00:47.614 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:00:47.615 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:00:47.761 +02:00 [INF] Server rahma_262003:5764:5eea36bf successfully announced in 141.1293 ms
+2026-01-12 17:00:47.764 +02:00 [INF] Server rahma_262003:5764:5eea36bf is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:00:47.770 +02:00 [INF] Server rahma_262003:5764:5eea36bf all the dispatchers started
+2026-01-12 17:00:47.776 +02:00 [INF] 1 servers were removed due to timeout
+2026-01-12 17:00:49.254 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:00:49.535 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 57.3501 ms
+2026-01-12 17:00:49.545 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 291.3835ms
+2026-01-12 17:00:49.569 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:00:49.569 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:00:49.578 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.6810 ms
+2026-01-12 17:00:49.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 14.6844ms
+2026-01-12 17:00:49.590 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:00:49.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 35.5035ms
+2026-01-12 17:00:49.680 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.8953ms
+2026-01-12 17:00:49.788 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:00:49.835 +02:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 37.3496 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-01-12 17:00:49.855 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-12 17:00:49.885 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 96.54ms
+2026-01-12 17:00:59.273 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-01-12 17:01:00.894 +02:00 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 1617.4216 ms
+2026-01-12 17:01:00.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1621.7568ms
+2026-01-12 17:01:00.901 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-01-12 17:01:26.832 +02:00 [INF] Application is starting...
+2026-01-12 17:01:27.029 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:01:27.133 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:01:27.438 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:01:27.469 +02:00 [INF] Application is running.
+2026-01-12 17:01:27.594 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:01:27.595 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:01:27.645 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:01:27.646 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:01:27.647 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:01:27.659 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:01:27.660 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:01:27.662 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:01:27.687 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:01:27.766 +02:00 [INF] Server rahma_262003:32516:3aad77e4 successfully announced in 96.1265 ms
+2026-01-12 17:01:27.770 +02:00 [INF] Server rahma_262003:32516:3aad77e4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:01:27.775 +02:00 [INF] Server rahma_262003:32516:3aad77e4 all the dispatchers started
+2026-01-12 17:01:27.825 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 59.3492 ms
+2026-01-12 17:01:27.835 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 146.5893ms
+2026-01-12 17:01:27.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:01:27.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:01:27.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:01:27.853 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.3942 ms
+2026-01-12 17:01:27.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 16.839ms
+2026-01-12 17:01:27.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 16.773ms
+2026-01-12 17:01:27.873 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-01-12 17:01:27.886 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.721ms
+2026-01-12 17:01:27.917 +02:00 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 41.4180 ms
+2026-01-12 17:01:27.919 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 46.1051ms
+2026-01-12 17:01:27.923 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-01-12 17:01:28.303 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:01:28.334 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.1648 ms
+2026-01-12 17:01:28.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.1914ms
+2026-01-12 17:02:10.464 +02:00 [INF] Application is starting...
+2026-01-12 17:02:10.625 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:02:10.771 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:02:11.022 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:02:11.041 +02:00 [INF] Application is running.
+2026-01-12 17:02:11.128 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:02:11.130 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:02:11.249 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:02:11.250 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:02:11.250 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:02:11.257 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:02:11.258 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:02:11.258 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:02:11.333 +02:00 [INF] Server rahma_262003:3056:c6430033 successfully announced in 69.4111 ms
+2026-01-12 17:02:11.338 +02:00 [INF] Server rahma_262003:3056:c6430033 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:02:11.343 +02:00 [INF] Server rahma_262003:3056:c6430033 all the dispatchers started
+2026-01-12 17:02:11.355 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:02:11.454 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 34.3521 ms
+2026-01-12 17:02:11.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 107.0589ms
+2026-01-12 17:02:11.464 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:02:11.464 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:02:11.464 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:02:11.472 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.2240 ms
+2026-01-12 17:02:11.474 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 9.2044ms
+2026-01-12 17:02:11.474 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 9.3259ms
+2026-01-12 17:02:11.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.718ms
+2026-01-12 17:02:11.548 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:02:11.564 +02:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 11.8752 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-01-12 17:02:11.577 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-12 17:02:11.589 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 40.8988ms
+2026-01-12 17:08:31.817 +02:00 [INF] Application is starting...
+2026-01-12 17:08:31.981 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:08:32.075 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:08:32.825 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:08:32.844 +02:00 [INF] Application is running.
+2026-01-12 17:08:32.932 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:08:32.933 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:08:33.055 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:08:33.056 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:08:33.056 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:08:33.064 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:08:33.065 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:08:33.065 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:08:33.139 +02:00 [INF] Server rahma_262003:21784:6fe8fa09 successfully announced in 68.2353 ms
+2026-01-12 17:08:33.142 +02:00 [INF] Server rahma_262003:21784:6fe8fa09 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:08:33.146 +02:00 [INF] Server rahma_262003:21784:6fe8fa09 all the dispatchers started
+2026-01-12 17:08:33.148 +02:00 [INF] 2 servers were removed due to timeout
+2026-01-12 17:08:35.063 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:08:35.168 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 42.2817 ms
+2026-01-12 17:08:35.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 114.1133ms
+2026-01-12 17:08:35.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:08:35.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:08:35.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:08:35.200 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.7957 ms
+2026-01-12 17:08:35.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 13.2202ms
+2026-01-12 17:08:35.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 18.2187ms
+2026-01-12 17:08:35.226 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.8923ms
+2026-01-12 17:08:35.414 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:08:35.440 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.0496 ms
+2026-01-12 17:08:35.444 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.5416ms
+2026-01-12 17:09:42.192 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundary9NOtwAb00YPZPexI 18836
+2026-01-12 17:09:42.204 +02:00 [INF] CORS policy execution successful.
+2026-01-12 17:09:42.243 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 17:09:42.268 +02:00 [INF] Route matched with {action = "ChangePicture", controller = "Profile", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePicture(eCommerce.Application.DTOs.UpdateImageDto) on controller eCommerce.Presentation.Controllers.ProfileController (eCommerce.Presentation).
+2026-01-12 17:09:43.573 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [i].[Id], [i].[PublicId], [i].[Url], [i].[UserId]
+FROM [AspNetUsers] AS [a]
+LEFT JOIN [Images] AS [i] ON [a].[Id] = [i].[UserId]
+WHERE [a].[Id] = @__userId_0
+2026-01-12 17:09:45.542 +02:00 [INF] Cloudinary Deletion Response: {"result":"ok","error":null}
+2026-01-12 17:09:45.657 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Images]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [Images] ([PublicId], [Url], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2, @p3);
+2026-01-12 17:09:45.683 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-01-12 17:09:45.691 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) in 3419.0106ms
+2026-01-12 17:09:45.692 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 17:09:45.693 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 200 in 3484.6477 ms
+2026-01-12 17:09:45.699 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 200 null application/json; charset=utf-8 3506.6165ms
+2026-01-12 17:13:33.156 +02:00 [INF] 1 servers were removed due to timeout
+2026-01-12 17:15:46.251 +02:00 [INF] Application is starting...
+2026-01-12 17:15:46.404 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:15:46.497 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:15:46.744 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:15:46.762 +02:00 [INF] Application is running.
+2026-01-12 17:15:46.845 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:15:46.846 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:15:46.962 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:15:46.968 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:15:46.969 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:15:46.970 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:15:46.978 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:15:46.979 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:15:46.979 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:15:47.054 +02:00 [INF] Server rahma_262003:8740:48472a57 successfully announced in 69.2888 ms
+2026-01-12 17:15:47.057 +02:00 [INF] Server rahma_262003:8740:48472a57 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:15:47.063 +02:00 [INF] Server rahma_262003:8740:48472a57 all the dispatchers started
+2026-01-12 17:15:47.066 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 39.1859 ms
+2026-01-12 17:15:47.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 113.2843ms
+2026-01-12 17:15:47.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:15:47.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:15:47.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:15:47.093 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.3693 ms
+2026-01-12 17:15:47.098 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 14.4075ms
+2026-01-12 17:15:47.099 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 15.9765ms
+2026-01-12 17:15:47.114 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.8507ms
+2026-01-12 17:15:47.254 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:15:47.271 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.0166 ms
+2026-01-12 17:15:47.273 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3171ms
+2026-01-12 17:16:43.447 +02:00 [INF] Application is starting...
+2026-01-12 17:16:43.606 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:16:43.704 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:16:43.937 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:16:43.956 +02:00 [INF] Application is running.
+2026-01-12 17:16:44.037 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:16:44.039 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:16:44.158 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:16:44.158 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:16:44.159 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:16:44.168 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:16:44.169 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:16:44.170 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:16:44.238 +02:00 [INF] Server rahma_262003:12792:2909d395 successfully announced in 61.6481 ms
+2026-01-12 17:16:44.241 +02:00 [INF] Server rahma_262003:12792:2909d395 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:16:44.246 +02:00 [INF] Server rahma_262003:12792:2909d395 all the dispatchers started
+2026-01-12 17:16:44.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:16:44.409 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 36.2623 ms
+2026-01-12 17:16:44.418 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 99.7862ms
+2026-01-12 17:16:44.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:16:44.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:16:44.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:16:44.426 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.8392 ms
+2026-01-12 17:16:44.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 6.9106ms
+2026-01-12 17:16:44.430 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.3906ms
+2026-01-12 17:16:44.451 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2675ms
+2026-01-12 17:16:44.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:16:44.509 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.3124 ms
+2026-01-12 17:16:44.511 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.3703ms
+2026-01-12 17:17:10.296 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 17:17:10.302 +02:00 [INF] CORS policy execution successful.
+2026-01-12 17:17:10.324 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 17:17:10.339 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 17:17:11.253 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:17:11.322 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:17:11.369 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 17:17:11.451 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:17:11.460 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:17:11.467 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:17:11.474 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 17:17:11.547 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 17:17:11.652 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 17:17:11.673 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 17:17:11.682 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1337.6868ms
+2026-01-12 17:17:11.684 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 17:17:11.686 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 1383.1639 ms
+2026-01-12 17:17:11.694 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 1398.609ms
+2026-01-12 17:17:38.224 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryw6nh6YcaDMBzppAY 28952
+2026-01-12 17:17:38.227 +02:00 [INF] CORS policy execution successful.
+2026-01-12 17:17:38.238 +02:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-01-12 17:17:38.257 +02:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-01-12 17:17:38.261 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-12 17:17:38.267 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-12 17:17:38.268 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 40.7380 ms
+2026-01-12 17:17:38.270 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 0 null 46.1763ms
+2026-01-12 17:18:08.744 +02:00 [INF] Application is starting...
+2026-01-12 17:18:08.894 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 17:18:09.000 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 17:18:09.226 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 17:18:09.246 +02:00 [INF] Application is running.
+2026-01-12 17:18:09.328 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 17:18:09.329 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 17:18:09.436 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 17:18:09.438 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 17:18:09.438 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 17:18:09.446 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 17:18:09.447 +02:00 [INF] Hosting environment: Development
+2026-01-12 17:18:09.448 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 17:18:09.521 +02:00 [INF] Server rahma_262003:18892:db92ba10 successfully announced in 67.571 ms
+2026-01-12 17:18:09.525 +02:00 [INF] Server rahma_262003:18892:db92ba10 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 17:18:09.529 +02:00 [INF] Server rahma_262003:18892:db92ba10 all the dispatchers started
+2026-01-12 17:18:09.630 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:18:09.717 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.3060 ms
+2026-01-12 17:18:09.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 95.7948ms
+2026-01-12 17:18:09.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:18:09.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:18:09.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:18:09.733 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.8478 ms
+2026-01-12 17:18:09.735 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 6.3723ms
+2026-01-12 17:18:09.737 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 7.8766ms
+2026-01-12 17:18:09.753 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.4625ms
+2026-01-12 17:18:09.810 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:18:09.824 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.4147 ms
+2026-01-12 17:18:09.826 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.5918ms
+2026-01-12 17:20:30.008 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 17:20:30.012 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.2559 ms
+2026-01-12 17:20:30.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 6.0824ms
+2026-01-12 17:20:30.030 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 17:20:30.030 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 17:20:30.031 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 17:20:30.034 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.4993 ms
+2026-01-12 17:20:30.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 6.3766ms
+2026-01-12 17:20:30.041 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7693ms
+2026-01-12 17:20:30.057 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.599ms
+2026-01-12 17:20:30.293 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 17:20:30.305 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.6150 ms
+2026-01-12 17:20:30.307 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.5272ms
+2026-01-12 17:21:11.501 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 17:21:11.506 +02:00 [INF] CORS policy execution successful.
+2026-01-12 17:21:11.527 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 17:21:11.543 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 17:21:12.597 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:21:12.664 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:21:12.713 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 17:21:12.785 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:21:12.791 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:21:12.796 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 17:21:12.803 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 17:21:12.840 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 17:21:12.969 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 17:21:13.003 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 17:21:13.012 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1466.2114ms
+2026-01-12 17:21:13.013 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 17:21:13.014 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 1507.2128 ms
+2026-01-12 17:21:13.021 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 1520.4721ms
+2026-01-12 17:21:46.246 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryT4i2keqQRafDKxat 18707
+2026-01-12 17:21:46.250 +02:00 [INF] CORS policy execution successful.
+2026-01-12 17:21:46.266 +02:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-01-12 17:21:46.280 +02:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-01-12 17:21:46.284 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2026-01-12 17:21:46.290 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-12 17:21:46.291 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 39.3373 ms
+2026-01-12 17:21:46.292 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 0 null 46.199ms
+2026-01-12 17:23:09.534 +02:00 [INF] 3 servers were removed due to timeout
+2026-01-12 18:45:26.111 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundarywpQlSrCl2FAC7NC5 18707
+2026-01-12 18:45:26.117 +02:00 [INF] CORS policy execution successful.
+2026-01-12 18:45:26.125 +02:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-01-12 18:45:26.128 +02:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-01-12 18:45:26.132 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2026-01-12 18:45:26.133 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-12 18:45:26.134 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 14.9512 ms
+2026-01-12 18:45:26.135 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 0 null 24.2825ms
+2026-01-12 18:58:05.552 +02:00 [INF] Application is starting...
+2026-01-12 18:58:05.710 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 18:58:05.812 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 18:58:06.291 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 18:58:06.310 +02:00 [INF] Application is running.
+2026-01-12 18:58:06.399 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 18:58:06.400 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 18:58:06.446 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 18:58:06.448 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 18:58:06.450 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 18:58:06.458 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 18:58:06.460 +02:00 [INF] Hosting environment: Development
+2026-01-12 18:58:06.460 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 18:58:06.541 +02:00 [INF] Server rahma_262003:31232:1061da70 successfully announced in 75.5533 ms
+2026-01-12 18:58:06.544 +02:00 [INF] Server rahma_262003:31232:1061da70 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 18:58:06.549 +02:00 [INF] Server rahma_262003:31232:1061da70 all the dispatchers started
+2026-01-12 18:58:12.169 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 18:58:12.273 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 36.5708 ms
+2026-01-12 18:58:12.280 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 112.0444ms
+2026-01-12 18:58:12.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 18:58:12.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 18:58:12.332 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.0622 ms
+2026-01-12 18:58:12.335 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 9.4647ms
+2026-01-12 18:58:12.338 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 13.1478ms
+2026-01-12 18:58:12.354 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 18:58:12.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.4426ms
+2026-01-12 18:58:12.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 18:58:12.720 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.0710 ms
+2026-01-12 18:58:12.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.6186ms
+2026-01-12 18:58:36.351 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 18:58:36.360 +02:00 [INF] CORS policy execution successful.
+2026-01-12 18:58:36.397 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 18:58:36.413 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 18:58:37.512 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:37.603 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:37.724 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 18:58:37.813 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 18:58:37.819 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1402.0826ms
+2026-01-12 18:58:37.820 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 18:58:37.823 +02:00 [INF] HTTP POST /api/Auth/login responded 400 in 1461.0090 ms
+2026-01-12 18:58:37.827 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 400 null application/json; charset=utf-8 1475.7938ms
+2026-01-12 18:58:45.697 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 18:58:45.707 +02:00 [INF] CORS policy execution successful.
+2026-01-12 18:58:45.713 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 18:58:45.716 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 18:58:45.795 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:45.804 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:45.815 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 18:58:45.923 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:45.933 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:45.943 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 18:58:45.957 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 18:58:46.020 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 18:58:46.202 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 18:58:46.245 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 18:58:46.249 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 529.1688ms
+2026-01-12 18:58:46.252 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 18:58:46.255 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 544.7999 ms
+2026-01-12 18:58:46.259 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 561.7508ms
+2026-01-12 18:59:11.354 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryMla1gbADjJ0SSLYD 18707
+2026-01-12 18:59:11.357 +02:00 [INF] CORS policy execution successful.
+2026-01-12 18:59:11.365 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2026-01-12 18:59:11.368 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-12 18:59:11.369 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 11.3579 ms
+2026-01-12 18:59:11.370 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 0 null 15.7199ms
+2026-01-12 19:01:31.287 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryybTR0JaqUHQVTeNN 18707
+2026-01-12 19:01:31.296 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:01:31.335 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:01:31.340 +02:00 [INF] Route matched with {action = "ChangePicture", controller = "Profile", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePicture(eCommerce.Application.DTOs.UpdateImageDto) on controller eCommerce.Presentation.Controllers.ProfileController (eCommerce.Presentation).
+2026-01-12 19:01:31.358 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-12 19:01:31.360 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) in 18.7969ms
+2026-01-12 19:01:31.361 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:01:31.362 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 64.4126 ms
+2026-01-12 19:01:31.363 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 null application/json; charset=utf-8 75.7371ms
+2026-01-12 19:03:06.556 +02:00 [INF] 1 servers were removed due to timeout
+2026-01-12 19:03:35.120 +02:00 [INF] Application is starting...
+2026-01-12 19:03:35.312 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 19:03:35.430 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 19:03:35.864 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 19:03:35.884 +02:00 [INF] Application is running.
+2026-01-12 19:03:35.976 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 19:03:35.976 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 19:03:36.095 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 19:03:36.096 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 19:03:36.097 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 19:03:36.106 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 19:03:36.107 +02:00 [INF] Hosting environment: Development
+2026-01-12 19:03:36.107 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 19:03:36.174 +02:00 [INF] Server rahma_262003:27220:8e30d3a7 successfully announced in 60.3746 ms
+2026-01-12 19:03:36.177 +02:00 [INF] Server rahma_262003:27220:8e30d3a7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 19:03:36.181 +02:00 [INF] Server rahma_262003:27220:8e30d3a7 all the dispatchers started
+2026-01-12 19:03:36.463 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 19:03:36.561 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 36.7398 ms
+2026-01-12 19:03:36.570 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 107.156ms
+2026-01-12 19:03:36.577 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:03:36.577 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:03:36.577 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 19:03:36.588 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.4735 ms
+2026-01-12 19:03:36.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 16.1268ms
+2026-01-12 19:03:36.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 15.9466ms
+2026-01-12 19:03:36.615 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5898ms
+2026-01-12 19:03:36.801 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 19:03:36.827 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.8981 ms
+2026-01-12 19:03:36.830 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.2585ms
+2026-01-12 19:04:01.121 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 19:04:01.127 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:04:01.152 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:04:01.166 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 19:04:02.213 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:04:02.275 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:04:02.312 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:04:02.401 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:04:02.405 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:04:02.408 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:04:02.411 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:04:02.453 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 19:04:02.649 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 19:04:02.673 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 19:04:02.680 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1509.6496ms
+2026-01-12 19:04:02.682 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:04:02.683 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 1554.2644 ms
+2026-01-12 19:04:02.688 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 1567.0231ms
+2026-01-12 19:04:27.117 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryAbXuuVtqyNlOAVIk 18707
+2026-01-12 19:04:27.121 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:04:27.158 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:04:27.164 +02:00 [INF] Route matched with {action = "ChangePicture", controller = "Profile", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePicture(eCommerce.Application.DTOs.UpdateImageDto) on controller eCommerce.Presentation.Controllers.ProfileController (eCommerce.Presentation).
+2026-01-12 19:04:27.308 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [i].[Id], [i].[PublicId], [i].[Url], [i].[UserId]
+FROM [AspNetUsers] AS [a]
+LEFT JOIN [Images] AS [i] ON [a].[Id] = [i].[UserId]
+WHERE [a].[Id] = @__userId_0
+2026-01-12 19:04:29.501 +02:00 [INF] Cloudinary Deletion Response: {"result":"ok","error":null}
+2026-01-12 19:04:29.554 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Images]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [Images] ([PublicId], [Url], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2, @p3);
+2026-01-12 19:04:29.565 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-01-12 19:04:29.567 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) in 2402.1852ms
+2026-01-12 19:04:29.568 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:04:29.569 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 200 in 2446.8420 ms
+2026-01-12 19:04:29.571 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 200 null application/json; charset=utf-8 2453.7364ms
+2026-01-12 19:05:01.092 +02:00 [INF] Application is starting...
+2026-01-12 19:05:01.253 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 19:05:01.358 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 19:05:01.819 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 19:05:01.839 +02:00 [INF] Application is running.
+2026-01-12 19:05:01.933 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 19:05:01.935 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 19:05:02.051 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 19:05:02.053 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 19:05:02.053 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 19:05:02.061 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 19:05:02.062 +02:00 [INF] Hosting environment: Development
+2026-01-12 19:05:02.063 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 19:05:02.145 +02:00 [INF] Server rahma_262003:20636:83645331 successfully announced in 75.9338 ms
+2026-01-12 19:05:02.148 +02:00 [INF] Server rahma_262003:20636:83645331 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 19:05:02.155 +02:00 [INF] Server rahma_262003:20636:83645331 all the dispatchers started
+2026-01-12 19:05:02.482 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 19:05:02.662 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 63.0152 ms
+2026-01-12 19:05:02.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 194.0955ms
+2026-01-12 19:05:02.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 19:05:02.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:05:02.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:05:02.689 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.9099 ms
+2026-01-12 19:05:02.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 7.2537ms
+2026-01-12 19:05:02.699 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 13.0362ms
+2026-01-12 19:05:02.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.4057ms
+2026-01-12 19:05:02.813 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 19:05:02.839 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.4963 ms
+2026-01-12 19:05:02.842 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.3992ms
+2026-01-12 19:05:35.559 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 19:05:35.565 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:05:35.597 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:05:35.619 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 19:05:36.962 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:05:37.056 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:05:37.105 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:05:37.185 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:05:37.191 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:05:37.194 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:05:37.200 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:05:37.235 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 19:05:37.363 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 19:05:37.391 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 19:05:37.402 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1778.5123ms
+2026-01-12 19:05:37.404 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:05:37.406 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 1839.4888 ms
+2026-01-12 19:05:37.412 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 1853.455ms
+2026-01-12 19:06:02.938 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundaryifncANhz1vQqG0bA 28952
+2026-01-12 19:06:02.941 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:06:02.954 +02:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-01-12 19:06:02.971 +02:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-01-12 19:06:02.975 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2026-01-12 19:06:02.981 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-12 19:06:02.982 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 401 in 40.3371 ms
+2026-01-12 19:06:02.983 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 401 0 null 45.7079ms
+2026-01-12 19:08:17.836 +02:00 [INF] Application is starting...
+2026-01-12 19:08:17.990 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-12 19:08:18.091 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-01-12 19:08:18.351 +02:00 [INF] Hangfire SQL objects installed.
+2026-01-12 19:08:18.371 +02:00 [INF] Application is running.
+2026-01-12 19:08:18.459 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-12 19:08:18.460 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-12 19:08:18.568 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-01-12 19:08:18.570 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-01-12 19:08:18.571 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-01-12 19:08:18.580 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-12 19:08:18.581 +02:00 [INF] Hosting environment: Development
+2026-01-12 19:08:18.581 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-12 19:08:18.647 +02:00 [INF] Server rahma_262003:38124:8e1d4b04 successfully announced in 60.2093 ms
+2026-01-12 19:08:18.650 +02:00 [INF] Server rahma_262003:38124:8e1d4b04 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-12 19:08:18.655 +02:00 [INF] Server rahma_262003:38124:8e1d4b04 all the dispatchers started
+2026-01-12 19:08:18.655 +02:00 [INF] 1 servers were removed due to timeout
+2026-01-12 19:08:18.772 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-12 19:08:18.864 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 34.4438 ms
+2026-01-12 19:08:18.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 100.8547ms
+2026-01-12 19:08:18.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-12 19:08:18.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:08:18.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:08:18.881 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.6733 ms
+2026-01-12 19:08:18.885 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 6.7394ms
+2026-01-12 19:08:18.889 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 10.7402ms
+2026-01-12 19:08:18.907 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.0943ms
+2026-01-12 19:08:18.962 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-12 19:08:18.976 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.0497 ms
+2026-01-12 19:08:18.979 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.0946ms
+2026-01-12 19:08:47.856 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Auth/login - application/json 60
+2026-01-12 19:08:47.863 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:08:47.884 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:08:47.899 +02:00 [INF] Route matched with {action = "Login", controller = "Auth", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.DTOs.User.LoginUserDto) on controller eCommerce.Presentation.Controllers.AuthController (eCommerce.Presentation).
+2026-01-12 19:08:48.765 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:08:48.853 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:08:48.920 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:08:49.007 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:08:49.013 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:08:49.015 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-12 19:08:49.019 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-12 19:08:49.044 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshToken] AS [r]
+WHERE [r].[Token] = @__token_0
+2026-01-12 19:08:49.167 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-01-12 19:08:49.199 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.LoginResponse'.
+2026-01-12 19:08:49.209 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation) in 1305.4632ms
+2026-01-12 19:08:49.211 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.AuthController.Login (eCommerce.Presentation)'
+2026-01-12 19:08:49.214 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 1349.1654 ms
+2026-01-12 19:08:49.222 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Auth/login - 200 null application/json; charset=utf-8 1364.8012ms
+2026-01-12 19:09:07.240 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundarye0BtrwmXBqQqoKoH 136
+2026-01-12 19:09:07.243 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:09:07.285 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:09:07.293 +02:00 [INF] Route matched with {action = "ChangePicture", controller = "Profile", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePicture(eCommerce.Application.DTOs.UpdateImageDto) on controller eCommerce.Presentation.Controllers.ProfileController (eCommerce.Presentation).
+2026-01-12 19:09:07.317 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-12 19:09:07.332 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) in 37.2564ms
+2026-01-12 19:09:07.334 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:09:07.335 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 400 in 91.1754 ms
+2026-01-12 19:09:07.337 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 400 null application/problem+json; charset=utf-8 96.9287ms
+2026-01-12 19:09:14.652 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - multipart/form-data; boundary=----WebKitFormBoundary9zcidnVVbNTsDvbl 28952
+2026-01-12 19:09:14.656 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:09:14.660 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:09:14.661 +02:00 [INF] Route matched with {action = "ChangePicture", controller = "Profile", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePicture(eCommerce.Application.DTOs.UpdateImageDto) on controller eCommerce.Presentation.Controllers.ProfileController (eCommerce.Presentation).
+2026-01-12 19:09:14.745 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [i].[Id], [i].[PublicId], [i].[Url], [i].[UserId]
+FROM [AspNetUsers] AS [a]
+LEFT JOIN [Images] AS [i] ON [a].[Id] = [i].[UserId]
+WHERE [a].[Id] = @__userId_0
+2026-01-12 19:09:16.626 +02:00 [INF] Cloudinary Deletion Response: {"result":"ok","error":null}
+2026-01-12 19:09:16.694 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Images]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [Images] ([PublicId], [Url], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2, @p3);
+2026-01-12 19:09:16.704 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-01-12 19:09:16.706 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation) in 2041.8442ms
+2026-01-12 19:09:16.707 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.ProfileController.ChangePicture (eCommerce.Presentation)'
+2026-01-12 19:09:16.707 +02:00 [INF] HTTP PUT /api/Profile/change-profile-picture responded 200 in 2050.7974 ms
+2026-01-12 19:09:16.709 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Profile/change-profile-picture - 200 null application/json; charset=utf-8 2056.4339ms
+2026-01-12 19:10:25.653 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire - null null
+2026-01-12 19:10:25.956 +02:00 [INF] HTTP GET /hangfire responded 200 in 288.0898 ms
+2026-01-12 19:10:25.959 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire - 200 null text/html 304.9721ms
+2026-01-12 19:10:25.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:25.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:25.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:25.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:25.975 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.428ms
+2026-01-12 19:10:25.977 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:25.991 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 20.6405 ms
+2026-01-12 19:10:25.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 29.1855ms
+2026-01-12 19:10:26.003 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 34.3460 ms
+2026-01-12 19:10:26.008 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 41.1717ms
+2026-01-12 19:10:26.021 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 48.3391 ms
+2026-01-12 19:10:26.026 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 59.1073ms
+2026-01-12 19:10:26.028 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.7914ms
+2026-01-12 19:10:26.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:26.121 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:26.139 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 10.0827 ms
+2026-01-12 19:10:26.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 39.2584ms
+2026-01-12 19:10:28.262 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:10:28.264 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:28.292 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 28.3509 ms
+2026-01-12 19:10:28.294 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 32.3042ms
+2026-01-12 19:10:30.309 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:10:30.311 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:30.329 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.2710 ms
+2026-01-12 19:10:30.330 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 20.4172ms
+2026-01-12 19:10:32.335 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:10:32.336 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:32.353 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.7060 ms
+2026-01-12 19:10:32.355 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 20.2349ms
+2026-01-12 19:10:34.368 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:10:34.370 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:34.398 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 27.3496 ms
+2026-01-12 19:10:34.401 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 32.9067ms
+2026-01-12 19:10:34.470 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/servers - null null
+2026-01-12 19:10:34.511 +02:00 [INF] HTTP GET /hangfire/servers responded 200 in 38.1533 ms
+2026-01-12 19:10:34.512 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/servers - 200 null text/html 42.2654ms
+2026-01-12 19:10:34.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:34.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:34.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:34.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:34.531 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.3902ms
+2026-01-12 19:10:34.535 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:34.537 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.8701 ms
+2026-01-12 19:10:34.540 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.6611 ms
+2026-01-12 19:10:34.542 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 8.7113 ms
+2026-01-12 19:10:34.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 18.294ms
+2026-01-12 19:10:34.548 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 19.8641ms
+2026-01-12 19:10:34.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 22.4903ms
+2026-01-12 19:10:34.556 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9721ms
+2026-01-12 19:10:34.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:34.609 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:34.612 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.5667 ms
+2026-01-12 19:10:34.614 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 7.449ms
+2026-01-12 19:10:36.635 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2026-01-12 19:10:36.638 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:36.644 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.0137 ms
+2026-01-12 19:10:36.646 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 11.5088ms
+2026-01-12 19:10:37.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/recurring - null null
+2026-01-12 19:10:37.038 +02:00 [INF] HTTP GET /hangfire/recurring responded 200 in 19.5249 ms
+2026-01-12 19:10:37.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/recurring - 200 null text/html 23.5996ms
+2026-01-12 19:10:37.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:37.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:37.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:37.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:37.048 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:37.050 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 1.2138 ms
+2026-01-12 19:10:37.050 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.0367ms
+2026-01-12 19:10:37.055 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 2.9796 ms
+2026-01-12 19:10:37.056 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.0410 ms
+2026-01-12 19:10:37.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 11.8503ms
+2026-01-12 19:10:37.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 17.9061ms
+2026-01-12 19:10:37.067 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 19.7263ms
+2026-01-12 19:10:37.069 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.6644ms
+2026-01-12 19:10:37.094 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:37.097 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:37.101 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.8282 ms
+2026-01-12 19:10:37.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 11.3711ms
+2026-01-12 19:10:38.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/retries - null null
+2026-01-12 19:10:38.032 +02:00 [INF] HTTP GET /hangfire/retries responded 200 in 16.4859 ms
+2026-01-12 19:10:38.034 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/retries - 200 null text/html 20.7548ms
+2026-01-12 19:10:38.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:38.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:38.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:38.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:38.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:38.060 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.5706 ms
+2026-01-12 19:10:38.060 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.0857 ms
+2026-01-12 19:10:38.062 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.0930 ms
+2026-01-12 19:10:38.063 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 11.2253ms
+2026-01-12 19:10:38.067 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 15.1314ms
+2026-01-12 19:10:38.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 17.6096ms
+2026-01-12 19:10:38.073 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 20.7438ms
+2026-01-12 19:10:38.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.2874ms
+2026-01-12 19:10:38.098 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:38.103 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:38.106 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.2831 ms
+2026-01-12 19:10:38.109 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 10.2119ms
+2026-01-12 19:10:39.343 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/enqueued - null null
+2026-01-12 19:10:39.360 +02:00 [INF] HTTP GET /hangfire/jobs/enqueued responded 200 in 14.8712 ms
+2026-01-12 19:10:39.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/enqueued - 200 null text/html 18.3452ms
+2026-01-12 19:10:39.381 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:39.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:39.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:39.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:39.388 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:39.389 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 3.7235 ms
+2026-01-12 19:10:39.389 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.6024 ms
+2026-01-12 19:10:39.394 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 11.2973ms
+2026-01-12 19:10:39.396 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.7649 ms
+2026-01-12 19:10:39.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 18.3239ms
+2026-01-12 19:10:39.407 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 23.6785ms
+2026-01-12 19:10:39.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.0274ms
+2026-01-12 19:10:39.412 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 28.9597ms
+2026-01-12 19:10:39.439 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:39.444 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:39.447 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.9313 ms
+2026-01-12 19:10:39.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 11.2133ms
+2026-01-12 19:10:41.490 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:10:41.492 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:41.498 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.8073 ms
+2026-01-12 19:10:41.499 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 9.0792ms
+2026-01-12 19:10:41.839 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded - null null
+2026-01-12 19:10:41.881 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 40.3315 ms
+2026-01-12 19:10:41.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded - 200 null text/html 44.6929ms
+2026-01-12 19:10:41.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:41.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:41.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:41.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:41.894 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:41.894 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 2.0709ms
+2026-01-12 19:10:41.896 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.5766 ms
+2026-01-12 19:10:41.899 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 1.9919 ms
+2026-01-12 19:10:41.905 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 4.6579 ms
+2026-01-12 19:10:41.913 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 20.2172ms
+2026-01-12 19:10:41.915 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 23.0014ms
+2026-01-12 19:10:41.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.7877ms
+2026-01-12 19:10:41.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 25.1363ms
+2026-01-12 19:10:41.952 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:41.955 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:41.959 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.5588 ms
+2026-01-12 19:10:41.961 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 8.3888ms
+2026-01-12 19:10:44.003 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:10:44.005 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:44.011 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.6439 ms
+2026-01-12 19:10:44.013 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 9.3357ms
+2026-01-12 19:10:46.026 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:10:46.027 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:46.033 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.8405 ms
+2026-01-12 19:10:46.035 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 9.1914ms
+2026-01-12 19:10:48.045 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:10:48.047 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:48.054 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.5620 ms
+2026-01-12 19:10:48.055 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 10.2104ms
+2026-01-12 19:10:48.211 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - null null
+2026-01-12 19:10:48.228 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 14.7354 ms
+2026-01-12 19:10:48.229 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - 200 null text/html 18.5451ms
+2026-01-12 19:10:48.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:48.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:48.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:48.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:48.239 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:48.240 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.1497 ms
+2026-01-12 19:10:48.240 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.2183 ms
+2026-01-12 19:10:48.243 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 2.0914 ms
+2026-01-12 19:10:48.244 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 7.2436ms
+2026-01-12 19:10:48.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 12.0382ms
+2026-01-12 19:10:48.251 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 14.2112ms
+2026-01-12 19:10:48.253 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 16.2752ms
+2026-01-12 19:10:48.258 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.4725ms
+2026-01-12 19:10:48.288 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:48.291 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:48.294 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.3445 ms
+2026-01-12 19:10:48.298 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 9.8606ms
+2026-01-12 19:10:49.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:10:49.657 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 15.2782 ms
+2026-01-12 19:10:49.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 18.9439ms
+2026-01-12 19:10:49.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:49.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:49.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:49.684 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:49.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:49.692 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.4443 ms
+2026-01-12 19:10:49.693 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.9891 ms
+2026-01-12 19:10:49.696 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.3927 ms
+2026-01-12 19:10:49.700 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 16.0889ms
+2026-01-12 19:10:49.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 21.3645ms
+2026-01-12 19:10:49.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 23.6877ms
+2026-01-12 19:10:49.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 26.4711ms
+2026-01-12 19:10:49.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5112ms
+2026-01-12 19:10:49.736 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:49.740 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:49.742 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 0.9600 ms
+2026-01-12 19:10:49.744 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 8.3512ms
+2026-01-12 19:10:51.803 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:10:51.805 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:51.811 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.2140 ms
+2026-01-12 19:10:51.813 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 9.7085ms
+2026-01-12 19:10:53.671 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - null null
+2026-01-12 19:10:53.696 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 22.9453 ms
+2026-01-12 19:10:53.698 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - 200 null text/html 26.6777ms
+2026-01-12 19:10:53.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:53.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:53.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:53.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:53.714 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.6614 ms
+2026-01-12 19:10:53.714 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:53.717 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.8816 ms
+2026-01-12 19:10:53.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 10.9199ms
+2026-01-12 19:10:53.723 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.9111 ms
+2026-01-12 19:10:53.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 13.1749ms
+2026-01-12 19:10:53.732 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 21.1274ms
+2026-01-12 19:10:53.742 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 30.6259ms
+2026-01-12 19:10:53.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.131ms
+2026-01-12 19:10:53.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:53.781 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:53.784 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.3134 ms
+2026-01-12 19:10:53.787 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 11.2745ms
+2026-01-12 19:10:54.637 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - null null
+2026-01-12 19:10:54.652 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 12.7462 ms
+2026-01-12 19:10:54.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=50 - 200 null text/html 17.4399ms
+2026-01-12 19:10:54.677 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:54.677 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:54.677 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:54.677 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:54.681 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:54.682 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.0725 ms
+2026-01-12 19:10:54.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 11.3699ms
+2026-01-12 19:10:54.689 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.2449 ms
+2026-01-12 19:10:54.695 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.8340 ms
+2026-01-12 19:10:54.698 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 21.6716ms
+2026-01-12 19:10:54.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 28.4603ms
+2026-01-12 19:10:54.706 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.7241ms
+2026-01-12 19:10:54.708 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 31.0861ms
+2026-01-12 19:10:54.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:54.747 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:54.751 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.5305 ms
+2026-01-12 19:10:54.755 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 12.6239ms
+2026-01-12 19:10:56.015 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:10:56.032 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 14.4346 ms
+2026-01-12 19:10:56.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 18.1457ms
+2026-01-12 19:10:56.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:56.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:56.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:56.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:56.057 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.4661ms
+2026-01-12 19:10:56.060 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:56.062 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.9594 ms
+2026-01-12 19:10:56.063 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.7721 ms
+2026-01-12 19:10:56.068 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 2.8577 ms
+2026-01-12 19:10:56.073 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 19.1105ms
+2026-01-12 19:10:56.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 21.1669ms
+2026-01-12 19:10:56.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 23.6552ms
+2026-01-12 19:10:56.081 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.7069ms
+2026-01-12 19:10:56.105 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:56.109 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:56.112 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.8153 ms
+2026-01-12 19:10:56.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 9.6775ms
+2026-01-12 19:10:57.262 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=10 - null null
+2026-01-12 19:10:57.295 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 30.3177 ms
+2026-01-12 19:10:57.296 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=10 - 200 null text/html 33.9184ms
+2026-01-12 19:10:57.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:57.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:57.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:57.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:57.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:57.328 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.9376 ms
+2026-01-12 19:10:57.328 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.0222 ms
+2026-01-12 19:10:57.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 13.5107ms
+2026-01-12 19:10:57.338 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 2.6138 ms
+2026-01-12 19:10:57.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 22.638ms
+2026-01-12 19:10:57.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 25.0955ms
+2026-01-12 19:10:57.348 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2107ms
+2026-01-12 19:10:57.349 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 31.3097ms
+2026-01-12 19:10:57.388 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:57.390 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:57.393 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.4854 ms
+2026-01-12 19:10:57.395 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 7.7338ms
+2026-01-12 19:10:59.064 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:10:59.082 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 15.2481 ms
+2026-01-12 19:10:59.084 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 19.6709ms
+2026-01-12 19:10:59.110 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:10:59.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:10:59.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:10:59.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:10:59.115 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:10:59.118 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 3.4709 ms
+2026-01-12 19:10:59.120 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.2553 ms
+2026-01-12 19:10:59.123 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 9.9381ms
+2026-01-12 19:10:59.130 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.0701 ms
+2026-01-12 19:10:59.133 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 22.8677ms
+2026-01-12 19:10:59.136 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 22.8723ms
+2026-01-12 19:10:59.139 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.7286ms
+2026-01-12 19:10:59.141 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 28.5499ms
+2026-01-12 19:10:59.164 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:10:59.167 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:10:59.169 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.8073 ms
+2026-01-12 19:10:59.172 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 8.0258ms
+2026-01-12 19:11:01.135 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=10 - null null
+2026-01-12 19:11:01.151 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 14.0571 ms
+2026-01-12 19:11:01.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=10 - 200 null text/html 18.0256ms
+2026-01-12 19:11:01.175 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:01.175 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:01.175 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:01.175 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:01.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:01.181 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 2.1603 ms
+2026-01-12 19:11:01.184 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.9096 ms
+2026-01-12 19:11:01.184 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.5902ms
+2026-01-12 19:11:01.190 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.2626 ms
+2026-01-12 19:11:01.192 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 16.2877ms
+2026-01-12 19:11:01.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 18.7385ms
+2026-01-12 19:11:01.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.9833ms
+2026-01-12 19:11:01.201 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 25.4989ms
+2026-01-12 19:11:01.222 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:01.226 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:01.228 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.4616 ms
+2026-01-12 19:11:01.230 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 8.2299ms
+2026-01-12 19:11:01.909 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:11:01.913 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 2.4320 ms
+2026-01-12 19:11:01.915 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 6.0433ms
+2026-01-12 19:11:01.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:01.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:01.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:01.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:01.943 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.0015 ms
+2026-01-12 19:11:01.945 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:01.944 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.7883 ms
+2026-01-12 19:11:01.947 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.8013 ms
+2026-01-12 19:11:01.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 12.8081ms
+2026-01-12 19:11:01.950 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 14.4832ms
+2026-01-12 19:11:01.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 18.3571ms
+2026-01-12 19:11:01.957 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 21.2138ms
+2026-01-12 19:11:01.962 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4265ms
+2026-01-12 19:11:01.982 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:01.986 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:01.988 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.4271 ms
+2026-01-12 19:11:01.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 7.2495ms
+2026-01-12 19:11:04.036 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:11:04.038 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:04.040 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 1.3168 ms
+2026-01-12 19:11:04.041 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 4.7415ms
+2026-01-12 19:11:04.351 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/details/9 - null null
+2026-01-12 19:11:04.374 +02:00 [INF] HTTP GET /hangfire/jobs/details/9 responded 200 in 20.6920 ms
+2026-01-12 19:11:04.376 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/details/9 - 200 null text/html 24.7291ms
+2026-01-12 19:11:04.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:04.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:04.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:04.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:04.384 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:04.385 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 1.3162 ms
+2026-01-12 19:11:04.386 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 0.4034 ms
+2026-01-12 19:11:04.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 5.2409ms
+2026-01-12 19:11:04.392 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.5807 ms
+2026-01-12 19:11:04.395 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 12.2579ms
+2026-01-12 19:11:04.399 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 16.0829ms
+2026-01-12 19:11:04.403 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.698ms
+2026-01-12 19:11:04.404 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 21.5996ms
+2026-01-12 19:11:04.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:04.508 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:04.511 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.7188 ms
+2026-01-12 19:11:04.514 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 9.5944ms
+2026-01-12 19:11:06.582 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:11:06.584 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:06.585 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 0.9234 ms
+2026-01-12 19:11:06.587 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 4.7531ms
+2026-01-12 19:11:08.593 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:11:08.595 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:08.596 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 0.9634 ms
+2026-01-12 19:11:08.598 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 4.7378ms
+2026-01-12 19:11:10.149 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:11:10.157 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 3.9506 ms
+2026-01-12 19:11:10.160 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 10.7401ms
+2026-01-12 19:11:10.186 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:10.186 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:10.186 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:10.186 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:10.192 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.5166 ms
+2026-01-12 19:11:10.192 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 3.7485 ms
+2026-01-12 19:11:10.195 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.363ms
+2026-01-12 19:11:10.198 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.7156 ms
+2026-01-12 19:11:10.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 12.328ms
+2026-01-12 19:11:10.201 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 15.2001ms
+2026-01-12 19:11:10.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 20.9108ms
+2026-01-12 19:11:10.223 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:10.226 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:10.229 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 2.3635 ms
+2026-01-12 19:11:10.234 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 10.7369ms
+2026-01-12 19:11:11.254 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/details/8 - null null
+2026-01-12 19:11:11.259 +02:00 [INF] HTTP GET /hangfire/jobs/details/8 responded 200 in 3.0757 ms
+2026-01-12 19:11:11.262 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/details/8 - 200 null text/html 7.6639ms
+2026-01-12 19:11:11.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:11.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:11.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:11.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:11.284 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:11.286 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.218ms
+2026-01-12 19:11:11.291 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 3.0762 ms
+2026-01-12 19:11:11.293 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 1.2966 ms
+2026-01-12 19:11:11.299 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 3.4378 ms
+2026-01-12 19:11:11.304 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 21.5505ms
+2026-01-12 19:11:11.306 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 22.9786ms
+2026-01-12 19:11:11.307 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.7328ms
+2026-01-12 19:11:11.308 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 25.1267ms
+2026-01-12 19:11:11.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:11.336 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:11.338 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 0.9149 ms
+2026-01-12 19:11:11.340 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 5.7986ms
+2026-01-12 19:11:13.388 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:11:13.390 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:13.392 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 1.0047 ms
+2026-01-12 19:11:13.393 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 4.3791ms
+2026-01-12 19:11:15.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - null null
+2026-01-12 19:11:15.092 +02:00 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 4.9388 ms
+2026-01-12 19:11:15.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/jobs/succeeded?from=0&count=20 - 200 null text/html 10.1296ms
+2026-01-12 19:11:15.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:15.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:15.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:15.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:15.106 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.3609 ms
+2026-01-12 19:11:15.107 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 0.3831 ms
+2026-01-12 19:11:15.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 7.9162ms
+2026-01-12 19:11:15.113 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 4.1151 ms
+2026-01-12 19:11:15.114 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 9.7566ms
+2026-01-12 19:11:15.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 11.9728ms
+2026-01-12 19:11:15.122 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 17.6281ms
+2026-01-12 19:11:15.134 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:15.136 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:15.138 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.2884 ms
+2026-01-12 19:11:15.140 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 6.3213ms
+2026-01-12 19:11:17.199 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 392
+2026-01-12 19:11:17.202 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:17.204 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 0.9282 ms
+2026-01-12 19:11:17.205 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 5.9968ms
+2026-01-12 19:11:19.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/retries - null null
+2026-01-12 19:11:19.096 +02:00 [INF] HTTP GET /hangfire/retries responded 200 in 4.6585 ms
+2026-01-12 19:11:19.097 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/retries - 200 null text/html 8.9444ms
+2026-01-12 19:11:19.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:19.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:19.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:19.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:19.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:19.114 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.2965 ms
+2026-01-12 19:11:19.116 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 0.7878 ms
+2026-01-12 19:11:19.121 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 8.2175ms
+2026-01-12 19:11:19.121 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 3.5035 ms
+2026-01-12 19:11:19.126 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 13.6872ms
+2026-01-12 19:11:19.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 16.0243ms
+2026-01-12 19:11:19.133 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.1988ms
+2026-01-12 19:11:19.134 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 21.5934ms
+2026-01-12 19:11:19.151 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:19.154 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:19.156 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 0.8078 ms
+2026-01-12 19:11:19.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 6.9381ms
+2026-01-12 19:11:21.198 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2026-01-12 19:11:21.201 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:21.207 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.9577 ms
+2026-01-12 19:11:21.209 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 10.8736ms
+2026-01-12 19:11:23.213 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2026-01-12 19:11:23.215 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:23.222 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.4861 ms
+2026-01-12 19:11:23.223 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 9.9496ms
+2026-01-12 19:11:23.509 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/ - null null
+2026-01-12 19:11:23.541 +02:00 [INF] HTTP GET /hangfire/ responded 200 in 24.1457 ms
+2026-01-12 19:11:23.543 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/ - 200 null text/html 34.0155ms
+2026-01-12 19:11:23.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - null null
+2026-01-12 19:11:23.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-12 19:11:23.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - null null
+2026-01-12 19:11:23.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - null null
+2026-01-12 19:11:23.562 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-12 19:11:23.564 +02:00 [INF] HTTP GET /hangfire/js18220348489149 responded 200 in 3.1326 ms
+2026-01-12 19:11:23.564 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 5.7319ms
+2026-01-12 19:11:23.567 +02:00 [INF] HTTP GET /hangfire/css18220626989751 responded 200 in 1.5083 ms
+2026-01-12 19:11:23.568 +02:00 [INF] HTTP GET /hangfire/css-dark182201457414278 responded 200 in 0.4465 ms
+2026-01-12 19:11:23.571 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/js18220348489149 - 200 null application/javascript 13.5303ms
+2026-01-12 19:11:23.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css18220626989751 - 200 null text/css 18.052ms
+2026-01-12 19:11:23.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.3931ms
+2026-01-12 19:11:23.578 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/css-dark182201457414278 - 200 null text/css 19.9818ms
+2026-01-12 19:11:23.602 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - null null
+2026-01-12 19:11:23.605 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:23.608 +02:00 [INF] HTTP GET /hangfire/fonts/glyphicons-halflings-regular/woff2 responded 200 in 1.1713 ms
+2026-01-12 19:11:23.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/hangfire/fonts/glyphicons-halflings-regular/woff2 - 200 null font/woff2 7.8005ms
+2026-01-12 19:11:25.670 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:11:25.674 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:25.690 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.5223 ms
+2026-01-12 19:11:25.693 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 22.682ms
+2026-01-12 19:11:27.699 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:11:27.701 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:27.704 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 2.9315 ms
+2026-01-12 19:11:27.706 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 6.749ms
+2026-01-12 19:11:29.712 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:11:29.714 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:29.718 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 3.0959 ms
+2026-01-12 19:11:29.719 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 6.6479ms
+2026-01-12 19:11:31.723 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:11:31.725 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:31.728 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 2.2320 ms
+2026-01-12 19:11:31.729 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 5.4045ms
+2026-01-12 19:11:34.114 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/hangfire/stats - application/x-www-form-urlencoded; charset=UTF-8 485
+2026-01-12 19:11:34.117 +02:00 [INF] CORS policy execution successful.
+2026-01-12 19:11:34.120 +02:00 [INF] HTTP POST /hangfire/stats responded 200 in 2.6337 ms
+2026-01-12 19:11:34.121 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/hangfire/stats - 200 null application/json 6.9386ms
+2026-01-12 19:13:18.672 +02:00 [INF] 2 servers were removed due to timeout

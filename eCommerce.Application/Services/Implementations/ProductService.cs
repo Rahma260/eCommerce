@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using eCommerce.Application.DTOs;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
+using eCommerce.Application.DTOs.Responses;
 using eCommerce.Application.Services.Interfaces;
-using eCommerce.Application.Validators;
+using eCommerce.Application.Validators.ValidationService.ValidationService;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces;
 using FluentValidation;
@@ -61,11 +61,12 @@ namespace eCommerce.Application.Services.Implementations
             var validationResult = await validationService.ValidateAsync(entity, updateProductValidator);
             if (!validationResult.success) return validationResult;
 
-            var mappedData = _mapper.Map<Product>(entity);
+            var existingProduct = await _unitOfWork.Products.GetByIdAsync(entity.Id);
 
-            await _unitOfWork.Products.UpdateAsync(mappedData);
-            //if (result == 0)
-            //    return new ServiceResponse(false, "Product not found");
+            if (existingProduct == null)
+                return new ServiceResponse(false, "Product not found");
+          
+            _mapper.Map(entity, existingProduct);
 
             await _unitOfWork.SaveAsync();
             return new ServiceResponse(true, "Product updated successfully");

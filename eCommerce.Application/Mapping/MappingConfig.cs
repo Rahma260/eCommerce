@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using eCommerce.Application.DTOs;
 using eCommerce.Application.DTOs.Cart;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
@@ -22,12 +23,20 @@ namespace eCommerce.Application.Mapping
             CreateMap<UpdateCategoryDto, Category>();
             CreateMap<UpdateProductDto, Product>();
 
-            CreateMap<CreateUserDto, User>();
+            CreateMap<CreateUserDto, User>()
+                 .ForMember(dest => dest.Image, opt => opt.Ignore());
+                // .ForMember(dest => dest.ImageId, opt => opt.Ignore());
+
+
             CreateMap<LoginUserDto, User>();
+            CreateMap<User, UserDto>().ReverseMap();
+         //  CreateMap<UserDto, User>();
 
             CreateMap<Address, AddressBaseDto>();
             CreateMap<PaymentMethod, GetPaymentMethod>();
-            CreateMap<CreateOrderDto, Order>();
+            CreateMap<CreateCheckoutDto, Domain.Entities.Checkout>();
+
+ //           CreateMap<ImageDto, Image>().ReverseMap();
         }
     }
 }

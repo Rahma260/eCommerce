@@ -12,45 +12,38 @@ public class DBContext : IdentityDbContext<User, Role, string>
     public DbSet<RefreshToken> RefreshToken { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
-    public DbSet<Order> Orders { get; set; }
+    public DbSet<Checkout> Checkouts { get; set; }
+    public DbSet<Image> Images { get; set; }
     public DbSet<PaymentMethod> PaymentMethodands { get; set; }
 
-    //didn't use yet
-    public DbSet<Payment> Payments { get; set; }
-    public DbSet<OrderItem> OrderItems { get; set; }
-    public DbSet<Cart> Carts { get; set; }
-    public DbSet<CartItem> CartItems { get; set; }
 
-    public DbSet<Brand> Brands { get; set; }
+    //didn't use yet
+    //public DbSet<Payment> Payments { get; set; }
+    //public DbSet<OrderItem> OrderItems { get; set; }
+    //public DbSet<Cart> Carts { get; set; }
+    //public DbSet<CartItem> CartItems { get; set; }
+
+    //public DbSet<Brand> Brands { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-
-        // User - Cart (One-to-One)
-        modelBuilder.Entity<User>()
-            .HasOne(u => u.Cart)
-            .WithOne(c => c.User)
-            .HasForeignKey<Cart>(c => c.UserId);
-
 
         // Decimal precision
         modelBuilder.Entity<Product>()
             .Property(p => p.Price)
             .HasPrecision(18, 2);
 
-        modelBuilder.Entity<OrderItem>()
-            .Property(oi => oi.UnitPrice)
-            .HasPrecision(18, 2);
-
-        modelBuilder.Entity<Payment>()
-            .Property(p => p.Amount)
-            .HasPrecision(18, 2);
-
+    
         modelBuilder.Entity<RefreshToken>()
             .HasOne(r => r.User)
             .WithMany()
             .HasForeignKey(r => r.UserId);
+
+        modelBuilder.Entity<Checkout>()
+            .HasOne(c => c.User)
+            .WithMany()
+            .HasForeignKey(c => c.UserId);
 
         // Seed Roles
         modelBuilder.Entity<Role>().HasData(

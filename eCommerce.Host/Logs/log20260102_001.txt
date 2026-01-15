@@ -1,0 +1,31 @@
+2026-01-02 17:19:59.022 +02:00 [INF] Application is starting...
+2026-01-02 17:19:59.169 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 111
+2026-01-02 17:20:13.090 +02:00 [INF] Application is starting...
+2026-01-02 17:20:13.273 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-02 17:20:13.363 +02:00 [INF] Application is running.
+2026-01-02 17:20:13.453 +02:00 [INF] Now listening on: https://localhost:7221
+2026-01-02 17:20:13.455 +02:00 [INF] Now listening on: http://localhost:5026
+2026-01-02 17:20:13.578 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-01-02 17:20:13.637 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-02 17:20:13.638 +02:00 [INF] Hosting environment: Development
+2026-01-02 17:20:13.638 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-01-02 17:20:13.701 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 40.4391 ms
+2026-01-02 17:20:13.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-01-02 17:20:13.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-01-02 17:20:13.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-02 17:20:13.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 148.9039ms
+2026-01-02 17:20:13.728 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.7960 ms
+2026-01-02 17:20:13.746 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 34.2893ms
+2026-01-02 17:20:13.754 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 43.5098ms
+2026-01-02 17:20:13.765 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.9099ms
+2026-01-02 17:20:13.852 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-01-02 17:20:13.868 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.1847 ms
+2026-01-02 17:20:13.870 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6097ms

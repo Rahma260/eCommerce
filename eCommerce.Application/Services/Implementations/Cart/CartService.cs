@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using eCommerce.Application.DTOs;
 using eCommerce.Application.DTOs.Cart;
+using eCommerce.Application.DTOs.Responses;
 using eCommerce.Application.Services.Interfaces.Cart;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Interfaces;
@@ -21,7 +21,7 @@ namespace eCommerce.Application.Services.Implementations.Cart
         IPaymentService paymentService,
         IUnitOfWork unitOfWork) : ICartService
     {
-        public async Task<ServiceResponse> Checkout(Checkout checkout)
+        public async Task<ServiceResponse> Checkout(DTOs.Cart.CheckoutDto checkout)
         {
             var(products, totalAmount) = await GetTotalAmount(checkout.Carts);
             var paymentMethods = await paymentMethodService.GetPaymentMethods();
@@ -31,10 +31,10 @@ namespace eCommerce.Application.Services.Implementations.Cart
             return new ServiceResponse { success = false, message = "invalid method" };
         }
 
-        public async Task<ServiceResponse> SaveCheckoutHistory(IEnumerable<CreateOrderDto> orders)
+        public async Task<ServiceResponse> SaveCheckoutHistory(IEnumerable<CreateCheckoutDto> orders)
         {
-            var mappedData = mapper.Map<IEnumerable<Domain.Entities.Order>>(orders);
-            var result = await cart.SaveCheckoutHistory((IEnumerable<Domain.Entities.Order>)mappedData);
+            var mappedData = mapper.Map<IEnumerable<DTOs.Cart.CheckoutDto>>(orders);
+            var result = await cart.SaveCheckoutHistory((IEnumerable<Domain.Entities.Checkout>)mappedData);
             return result > 0 ? new ServiceResponse { success = true, message = "Order placed successfully" } :
                 new ServiceResponse { message = "Failed to place order" };
         }
@@ -55,8 +55,6 @@ namespace eCommerce.Application.Services.Implementations.Cart
                 .Sum(x => x.cart.Quantity * (x.product.Price ?? 0m));
 
             return (cartProducts.Select(x => x.product), totalAmount);
-
-
         }
     }
 }

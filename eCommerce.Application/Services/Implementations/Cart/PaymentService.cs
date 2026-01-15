@@ -1,5 +1,5 @@
-﻿using eCommerce.Application.DTOs;
-using eCommerce.Application.DTOs.Cart;
+﻿using eCommerce.Application.DTOs.Cart;
+using eCommerce.Application.DTOs.Responses;
 using eCommerce.Application.Services.Interfaces.Cart;
 using eCommerce.Domain.Entities;
 using System;

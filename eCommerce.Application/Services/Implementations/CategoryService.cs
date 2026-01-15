@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using eCommerce.Application.DTOs;
 using eCommerce.Application.DTOs.Category;
 using eCommerce.Application.DTOs.Product;
+using eCommerce.Application.DTOs.Responses;
 using eCommerce.Application.DTOs.User;
 using eCommerce.Application.Services.Interfaces;
-using eCommerce.Application.Validators;
+using eCommerce.Application.Validators.ValidationService.ValidationService;
 using eCommerce.Domain.Entities;
 using eCommerce.Domain.Entities.Identity;
 using eCommerce.Domain.Interfaces;
@@ -59,19 +59,22 @@ namespace eCommerce.Application.Services.Implementations
             return _mapper.Map<GetCategoryDto>(rawData);
         }
 
-        public async Task<ServiceResponse> UpdateAsync(UpdateCategoryDto entity)
+        public async Task<ServiceResponse> UpdateAsync(UpdateCategoryDto dto)
         {
-            var validationResult = await validationService.ValidateAsync(entity, updateCategoryValidator);
-            if (!validationResult.success) return validationResult;
+            var validationResult = await validationService.ValidateAsync(dto, updateCategoryValidator);
+            if (!validationResult.success)
+                return validationResult;
 
-            var mappedData = _mapper.Map<Category>(entity);
+            var existingCategory = await _unitOfWork.Categories.GetByIdAsync(dto.Id);
+            if (existingCategory == null)
+                return new ServiceResponse(false, "Category not found");
 
-            await _unitOfWork.Categories.UpdateAsync(mappedData);
-            //if (result == 0)
-            //    return new ServiceResponse(false, "Category not found");
+            _mapper.Map(dto, existingCategory);
 
             await _unitOfWork.SaveAsync();
+
             return new ServiceResponse(true, "Category updated successfully");
         }
+
     }
 }

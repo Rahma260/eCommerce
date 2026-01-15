@@ -9,6 +9,6 @@ namespace eCommerce.Domain.Interfaces.Cart
 {
     public interface ICart
     {
-        Task<int> SaveCheckoutHistory(IEnumerable<Order> checkouts);
+        Task<int> SaveCheckoutHistory(IEnumerable<Checkout> checkouts);
     }
 }
