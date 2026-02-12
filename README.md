@@ -26,13 +26,6 @@ The system handles secure authentication, cart management, order processing, and
 - Secure payment intent creation
 - Automatic order status updates after successful payment
 
-### 📦 Orders
-- Full **order lifecycle management**
-  - `Pending`
-  - `Paid`
-  - `Cancelled`
-- Reliable order creation with transactional consistency
-
 ### 🖼️ Media Management
 - Image upload and management using **Cloudinary**
 
