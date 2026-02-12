@@ -1,0 +1,455 @@
+2026-02-09 20:55:42.729 +02:00 [INF] Application is starting...
+2026-02-09 20:55:42.910 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 172
+2026-02-09 20:56:04.225 +02:00 [INF] Application is starting...
+2026-02-09 20:56:04.374 +02:00 [ERR] Application failed to start correctly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\eCommerce\eCommerce.Host\Program.cs:line 172
+2026-02-09 20:56:04.376 +02:00 [INF] Application is starting...
+2026-02-09 20:56:04.659 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-09 20:56:04.837 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-02-09 20:56:05.243 +02:00 [INF] Hangfire SQL objects installed.
+2026-02-09 20:56:05.275 +02:00 [INF] Application is running.
+2026-02-09 20:56:05.446 +02:00 [INF] Now listening on: https://localhost:7221
+2026-02-09 20:56:05.448 +02:00 [INF] Now listening on: http://localhost:5026
+2026-02-09 20:56:05.536 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-02-09 20:56:05.538 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-02-09 20:56:05.540 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-02-09 20:56:05.550 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-02-09 20:56:05.556 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-09 20:56:05.560 +02:00 [INF] Hosting environment: Development
+2026-02-09 20:56:05.561 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-02-09 20:56:05.713 +02:00 [INF] Server rahma_262003:18096:b55dff4d successfully announced in 142.929 ms
+2026-02-09 20:56:05.719 +02:00 [INF] Server rahma_262003:18096:b55dff4d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-02-09 20:56:05.731 +02:00 [INF] Server rahma_262003:18096:b55dff4d all the dispatchers started
+2026-02-09 20:56:05.756 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 86.7430 ms
+2026-02-09 20:56:05.779 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 227.3996ms
+2026-02-09 20:56:05.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-02-09 20:56:05.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-09 20:56:05.783 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-02-09 20:56:05.801 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.5360 ms
+2026-02-09 20:56:05.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 32.1661ms
+2026-02-09 20:56:05.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 35.1162ms
+2026-02-09 20:56:05.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.4152ms
+2026-02-09 20:56:05.912 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-02-09 20:56:05.947 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 28.3841 ms
+2026-02-09 20:56:05.952 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.921ms
+2026-02-09 20:59:47.476 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/add - application/json 89
+2026-02-09 20:59:47.493 +02:00 [INF] CORS policy execution successful.
+2026-02-09 20:59:49.740 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 20:59:49.774 +02:00 [INF] Route matched with {action = "AddToCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(eCommerce.Application.DTOs.AddToCartDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 20:59:52.565 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 20:59:52.579 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation) in 2794.9544ms
+2026-02-09 20:59:52.584 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 20:59:52.589 +02:00 [INF] HTTP POST /api/Cart/add responded 200 in 5091.4428 ms
+2026-02-09 20:59:52.595 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/add - 200 null application/json; charset=utf-8 5119.5876ms
+2026-02-09 21:00:09.911 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - null null
+2026-02-09 21:00:09.932 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:00:09.947 +02:00 [INF] Route matched with {action = "ViewCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCart(System.String) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:00:09.977 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.CartDto'.
+2026-02-09 21:00:09.985 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation) in 31.0393ms
+2026-02-09 21:00:09.989 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:00:09.991 +02:00 [INF] HTTP GET /api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 responded 200 in 62.5181 ms
+2026-02-09 21:00:09.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - 200 null application/json; charset=utf-8 84.3285ms
+2026-02-09 21:00:34.705 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7221/api/Cart/update - application/json 89
+2026-02-09 21:00:34.725 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:00:34.743 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.UpdateCart (eCommerce.Presentation)'
+2026-02-09 21:00:34.764 +02:00 [INF] Route matched with {action = "UpdateCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCart(eCommerce.Application.DTOs.AddToCartDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:00:34.814 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:00:34.824 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.UpdateCart (eCommerce.Presentation) in 46.4752ms
+2026-02-09 21:00:34.834 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.UpdateCart (eCommerce.Presentation)'
+2026-02-09 21:00:34.843 +02:00 [INF] HTTP PUT /api/Cart/update responded 200 in 111.4639 ms
+2026-02-09 21:00:34.856 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7221/api/Cart/update - 200 null application/json; charset=utf-8 151.0521ms
+2026-02-09 21:01:05.783 +02:00 [INF] 2 servers were removed due to timeout
+2026-02-09 21:01:46.576 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 78
+2026-02-09 21:01:46.594 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:01:46.598 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:01:46.614 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.CheckoutDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:01:47.483 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-09 21:01:47.488 +02:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-09 21:01:47.949 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2026-02-09 21:01:47.984 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:01:47.989 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 1367.5077ms
+2026-02-09 21:01:47.992 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:01:47.994 +02:00 [INF] HTTP POST /api/Cart/checkout responded 400 in 1396.6389 ms
+2026-02-09 21:01:48.002 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 400 null application/json; charset=utf-8 1425.3423ms
+2026-02-09 21:01:57.689 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 78
+2026-02-09 21:01:57.705 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:01:57.711 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:01:57.719 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.CheckoutDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:01:57.881 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2026-02-09 21:01:57.949 +02:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[ImageId], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2026-02-09 21:01:59.476 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OrderDate], [PaymentMethodId], [PaymentStatus], [TotalAmount], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-02-09 21:01:59.530 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [Quantity], [UnitPrice])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6, @p7, @p8);
+2026-02-09 21:01:59.561 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:01:59.565 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 1833.7128ms
+2026-02-09 21:01:59.569 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:01:59.570 +02:00 [INF] HTTP POST /api/Cart/checkout responded 200 in 1859.5419 ms
+2026-02-09 21:01:59.575 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 200 null application/json; charset=utf-8 1885.7512ms
+2026-02-09 21:02:18.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - null null
+2026-02-09 21:02:18.200 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:02:18.204 +02:00 [INF] Route matched with {action = "ViewCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCart(System.String) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:02:18.212 +02:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-09 21:02:18.219 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation) in 11.01ms
+2026-02-09 21:02:18.222 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:02:18.224 +02:00 [INF] HTTP GET /api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 responded 404 in 24.6102 ms
+2026-02-09 21:02:18.228 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - 404 null application/json; charset=utf-8 39.0739ms
+2026-02-09 21:02:29.333 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 - null null
+2026-02-09 21:02:29.342 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation)'
+2026-02-09 21:02:29.351 +02:00 [INF] Route matched with {action = "GetUserOrders", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserOrders(System.String) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:02:29.593 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderDate], [o].[PaymentMethodId], [o].[PaymentStatus], [o].[TotalAmount], [o].[UserId], [p].[Id], [a].[Id], [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[UnitPrice], [p].[Name], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Orders] AS [o]
+INNER JOIN [PaymentMethodands] AS [p] ON [o].[PaymentMethodId] = [p].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [o].[UserId] = [a].[Id]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id], [p].[Id], [a].[Id]
+2026-02-09 21:02:29.676 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation) in 319.08ms
+2026-02-09 21:02:29.681 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation)'
+2026-02-09 21:02:29.685 +02:00 [ERR] Unknown Exception
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[eCommerce.Domain.Entities.Order, eCommerce.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[eCommerce.Application.DTOs.OrderDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Order -> OrderDto
+eCommerce.Domain.Entities.Order -> eCommerce.Application.DTOs.OrderDto
+   at lambda_method429(Closure, Order, OrderDto, ResolutionContext)
+   at lambda_method428(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method428(Closure, Object, IEnumerable`1, ResolutionContext)
+   at eCommerce.Application.Services.Implementations.Cart.CartService.GetUserOrdersAsync(String userId) in E:\eCommerce\eCommerce.Application\Services\Implementations\Cart\CartService.cs:line 176
+   at eCommerce.Presentation.Controllers.CartController.GetUserOrders(String userId) in E:\eCommerce\eCommerce.Host\Controllers\CartController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Host\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-02-09 21:02:29.745 +02:00 [ERR] HTTP GET /api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 responded 500 in 402.5149 ms
+2026-02-09 21:02:29.749 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 - 500 null application/json 415.9484ms
+2026-02-09 21:02:49.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - null null
+2026-02-09 21:02:49.262 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.GetOrderById (eCommerce.Presentation)'
+2026-02-09 21:02:49.274 +02:00 [INF] Route matched with {action = "GetOrderById", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderById(System.String, Int32) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:02:49.327 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[OrderDate], [s].[PaymentMethodId], [s].[PaymentStatus], [s].[TotalAmount], [s].[UserId], [s].[Id0], [s].[Id1], [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[UnitPrice], [s].[Name], [s].[AccessFailedCount], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[FullName], [s].[Gender], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[Provider], [s].[ProviderId], [s].[SecurityStamp], [s].[TwoFactorEnabled], [s].[UserName]
+FROM (
+    SELECT TOP(1) [o].[Id], [o].[OrderDate], [o].[PaymentMethodId], [o].[PaymentStatus], [o].[TotalAmount], [o].[UserId], [p].[Id] AS [Id0], [p].[Name], [a].[Id] AS [Id1], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+    FROM [Orders] AS [o]
+    INNER JOIN [PaymentMethodands] AS [p] ON [o].[PaymentMethodId] = [p].[Id]
+    INNER JOIN [AspNetUsers] AS [a] ON [o].[UserId] = [a].[Id]
+    WHERE [o].[Id] = @__id_0
+) AS [s]
+LEFT JOIN [OrderItems] AS [o0] ON [s].[Id] = [o0].[OrderId]
+ORDER BY [s].[Id], [s].[Id0], [s].[Id1]
+2026-02-09 21:02:49.341 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.GetOrderById (eCommerce.Presentation) in 59.6406ms
+2026-02-09 21:02:49.344 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.GetOrderById (eCommerce.Presentation)'
+2026-02-09 21:02:49.346 +02:00 [ERR] Unknown Exception
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Order -> OrderDto
+eCommerce.Domain.Entities.Order -> eCommerce.Application.DTOs.OrderDto
+   at lambda_method450(Closure, Object, OrderDto, ResolutionContext)
+   at eCommerce.Application.Services.Implementations.Cart.CartService.GetOrderByIdAsync(String userId, Int32 orderId) in E:\eCommerce\eCommerce.Application\Services\Implementations\Cart\CartService.cs:line 190
+   at eCommerce.Presentation.Controllers.CartController.GetOrderById(String userId, Int32 orderId) in E:\eCommerce\eCommerce.Host\Controllers\CartController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Host\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-02-09 21:02:49.353 +02:00 [ERR] HTTP GET /api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 responded 500 in 91.2412 ms
+2026-02-09 21:02:49.358 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - 500 null application/json 102.5782ms
+2026-02-09 21:06:07.799 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/add - application/json 89
+2026-02-09 21:06:07.806 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:06:07.809 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 21:06:07.812 +02:00 [INF] Route matched with {action = "AddToCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(eCommerce.Application.DTOs.AddToCartDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:06:07.818 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:06:07.821 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation) in 5.4987ms
+2026-02-09 21:06:07.823 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 21:06:07.824 +02:00 [INF] HTTP POST /api/Cart/add responded 200 in 15.6240 ms
+2026-02-09 21:06:07.827 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/add - 200 null application/json; charset=utf-8 28.0038ms
+2026-02-09 21:07:04.181 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - null null
+2026-02-09 21:07:04.185 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:07:04.186 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation)'
+2026-02-09 21:07:04.199 +02:00 [INF] Route matched with {action = "RemoveFromCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(System.String, Int32) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:07:04.214 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:07:04.218 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation) in 13.948ms
+2026-02-09 21:07:04.220 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation)'
+2026-02-09 21:07:04.222 +02:00 [INF] HTTP DELETE /api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 responded 200 in 36.4256 ms
+2026-02-09 21:07:04.225 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - 200 null application/json; charset=utf-8 44.5286ms
+2026-02-09 21:07:17.246 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - null null
+2026-02-09 21:07:17.256 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:07:17.259 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation)'
+2026-02-09 21:07:17.261 +02:00 [INF] Route matched with {action = "RemoveFromCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(System.String, Int32) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:07:17.274 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:07:17.279 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation) in 12.2679ms
+2026-02-09 21:07:17.283 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.RemoveFromCart (eCommerce.Presentation)'
+2026-02-09 21:07:17.286 +02:00 [INF] HTTP DELETE /api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 responded 400 in 27.6262 ms
+2026-02-09 21:07:17.288 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/Cart/remove/2b76a208-7eb3-4335-9439-9fa444bc68c1/1 - 400 null application/json; charset=utf-8 41.8603ms
+2026-02-09 21:07:35.468 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - null null
+2026-02-09 21:07:35.479 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:07:35.485 +02:00 [INF] Route matched with {action = "ViewCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCart(System.String) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:07:35.493 +02:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-09 21:07:35.498 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation) in 7.858ms
+2026-02-09 21:07:35.501 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.ViewCart (eCommerce.Presentation)'
+2026-02-09 21:07:35.502 +02:00 [INF] HTTP GET /api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 responded 404 in 23.9721 ms
+2026-02-09 21:07:35.505 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/view/2b76a208-7eb3-4335-9439-9fa444bc68c1 - 404 null application/json; charset=utf-8 36.9178ms
+2026-02-09 21:20:59.593 +02:00 [INF] Application is starting...
+2026-02-09 21:20:59.802 +02:00 [INF] User profile is available. Using 'C:\Users\20114\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-09 21:20:59.930 +02:00 [INF] Start installing Hangfire SQL objects...
+2026-02-09 21:21:00.674 +02:00 [INF] Hangfire SQL objects installed.
+2026-02-09 21:21:00.704 +02:00 [INF] Application is running.
+2026-02-09 21:21:00.894 +02:00 [INF] Now listening on: https://localhost:7221
+2026-02-09 21:21:00.895 +02:00 [INF] Now listening on: http://localhost:5026
+2026-02-09 21:21:01.042 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@eCommerce'
+2026-02-09 21:21:01.044 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-02-09 21:21:01.044 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-02-09 21:21:01.053 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-09 21:21:01.054 +02:00 [INF] Hosting environment: Development
+2026-02-09 21:21:01.055 +02:00 [INF] Content root path: E:\eCommerce\eCommerce.Host
+2026-02-09 21:21:01.141 +02:00 [INF] Server rahma_262003:21912:5cf9167d successfully announced in 79.4346 ms
+2026-02-09 21:21:01.144 +02:00 [INF] Server rahma_262003:21912:5cf9167d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-02-09 21:21:01.149 +02:00 [INF] Server rahma_262003:21912:5cf9167d all the dispatchers started
+2026-02-09 21:21:01.150 +02:00 [INF] 1 servers were removed due to timeout
+2026-02-09 21:21:01.589 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2026-02-09 21:21:01.828 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 53.0563 ms
+2026-02-09 21:21:01.841 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 252.903ms
+2026-02-09 21:21:01.844 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-09 21:21:01.844 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2026-02-09 21:21:01.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2026-02-09 21:21:01.868 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.1023 ms
+2026-02-09 21:21:01.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 28.0797ms
+2026-02-09 21:21:01.874 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 29.2338ms
+2026-02-09 21:21:01.929 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.4755ms
+2026-02-09 21:21:02.129 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2026-02-09 21:21:02.154 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.0853 ms
+2026-02-09 21:21:02.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.9265ms
+2026-02-09 21:21:12.724 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/webhook - null 0
+2026-02-09 21:21:12.744 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:21:12.789 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation)'
+2026-02-09 21:21:12.808 +02:00 [INF] Route matched with {action = "StripeWebhook", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StripeWebhook() on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:21:13.025 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation) in 212.5625ms
+2026-02-09 21:21:13.026 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation)'
+2026-02-09 21:21:13.027 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Stripe.EventUtility.ParseStripeSignature(String stripeSignatureHeader) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 210
+   at Stripe.EventUtility.ValidateSignature(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Int64 utcNow) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 166
+   at Stripe.EventUtility.ConstructEvent(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Int64 utcNow, Boolean throwOnApiVersionMismatch) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 155
+   at Stripe.EventUtility.ConstructEvent(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Boolean throwOnApiVersionMismatch) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 116
+   at eCommerce.Presentation.Controllers.CartController.StripeWebhook() in E:\eCommerce\eCommerce.Host\Controllers\CartController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Host\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-02-09 21:21:13.086 +02:00 [ERR] HTTP POST /api/Cart/webhook responded 500 in 335.5285 ms
+2026-02-09 21:21:13.090 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/webhook - 500 null application/json 365.8892ms
+2026-02-09 21:21:48.899 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/add - application/json 89
+2026-02-09 21:21:48.911 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:21:48.919 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 21:21:48.932 +02:00 [INF] Route matched with {action = "AddToCart", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(eCommerce.Application.DTOs.AddToCartDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:21:51.119 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:21:51.126 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation) in 2192.1527ms
+2026-02-09 21:21:51.129 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.AddToCart (eCommerce.Presentation)'
+2026-02-09 21:21:51.131 +02:00 [INF] HTTP POST /api/Cart/add responded 200 in 2217.9198 ms
+2026-02-09 21:21:51.134 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/add - 200 null application/json; charset=utf-8 2234.8911ms
+2026-02-09 21:22:08.088 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/checkout - application/json 78
+2026-02-09 21:22:08.092 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:22:08.097 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:22:08.107 +02:00 [INF] Route matched with {action = "Checkout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(eCommerce.Application.DTOs.CheckoutDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:22:08.597 +02:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-09 21:22:08.600 +02:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-09 21:22:08.966 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [PaymentMethodands] AS [p]
+2026-02-09 21:22:09.004 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[ImageId], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2026-02-09 21:22:10.120 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OrderDate], [PaymentMethodId], [PaymentStatus], [TotalAmount], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-02-09 21:22:10.155 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [Quantity], [UnitPrice])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6, @p7, @p8);
+2026-02-09 21:22:10.185 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:22:10.190 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation) in 2079.0003ms
+2026-02-09 21:22:10.194 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.Checkout (eCommerce.Presentation)'
+2026-02-09 21:22:10.195 +02:00 [INF] HTTP POST /api/Cart/checkout responded 200 in 2101.8784 ms
+2026-02-09 21:22:10.209 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/checkout - 200 null application/json; charset=utf-8 2120.9156ms
+2026-02-09 21:22:35.560 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/save-checkout - application/json 150
+2026-02-09 21:22:35.564 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:22:35.565 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.SaveCheckout (eCommerce.Presentation)'
+2026-02-09 21:22:35.570 +02:00 [INF] Route matched with {action = "SaveCheckout", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SaveCheckout(eCommerce.Application.DTOs.SaveCheckoutDto) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:22:35.622 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CreatedAt], [p].[Description], [p].[ImageId], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2026-02-09 21:22:35.631 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OrderDate], [PaymentMethodId], [PaymentStatus], [TotalAmount], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-02-09 21:22:35.635 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [Quantity], [UnitPrice])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6, @p7, @p8);
+2026-02-09 21:22:35.639 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Responses.ServiceResponse'.
+2026-02-09 21:22:35.640 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.SaveCheckout (eCommerce.Presentation) in 67.2169ms
+2026-02-09 21:22:35.641 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.SaveCheckout (eCommerce.Presentation)'
+2026-02-09 21:22:35.642 +02:00 [INF] HTTP POST /api/Cart/save-checkout responded 200 in 77.0891 ms
+2026-02-09 21:22:35.644 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/save-checkout - 200 null application/json; charset=utf-8 83.142ms
+2026-02-09 21:22:41.272 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Cart/webhook - null 0
+2026-02-09 21:22:41.275 +02:00 [INF] CORS policy execution successful.
+2026-02-09 21:22:41.277 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation)'
+2026-02-09 21:22:41.278 +02:00 [INF] Route matched with {action = "StripeWebhook", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StripeWebhook() on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:22:41.313 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation) in 33.8296ms
+2026-02-09 21:22:41.317 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.StripeWebhook (eCommerce.Presentation)'
+2026-02-09 21:22:41.318 +02:00 [ERR] Unknown Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Stripe.EventUtility.ParseStripeSignature(String stripeSignatureHeader) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 210
+   at Stripe.EventUtility.ValidateSignature(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Int64 utcNow) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 166
+   at Stripe.EventUtility.ConstructEvent(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Int64 utcNow, Boolean throwOnApiVersionMismatch) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 155
+   at Stripe.EventUtility.ConstructEvent(String json, String stripeSignatureHeader, String secret, Int64 tolerance, Boolean throwOnApiVersionMismatch) in /_/src/Stripe.net/Services/Events/EventUtility.cs:line 116
+   at eCommerce.Presentation.Controllers.CartController.StripeWebhook() in E:\eCommerce\eCommerce.Host\Controllers\CartController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Host\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-02-09 21:22:41.322 +02:00 [ERR] HTTP POST /api/Cart/webhook responded 500 in 46.0591 ms
+2026-02-09 21:22:41.325 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Cart/webhook - 500 null application/json 52.5672ms
+2026-02-09 21:22:50.512 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 - null null
+2026-02-09 21:22:50.521 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation)'
+2026-02-09 21:22:50.529 +02:00 [INF] Route matched with {action = "GetUserOrders", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserOrders(System.String) on controller eCommerce.Presentation.Controllers.CartController (eCommerce.Presentation).
+2026-02-09 21:22:50.659 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderDate], [o].[PaymentMethodId], [o].[PaymentStatus], [o].[TotalAmount], [o].[UserId], [p].[Id], [a].[Id], [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[Quantity], [o0].[UnitPrice], [p].[Name], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Provider], [a].[ProviderId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Orders] AS [o]
+INNER JOIN [PaymentMethodands] AS [p] ON [o].[PaymentMethodId] = [p].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [o].[UserId] = [a].[Id]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id], [p].[Id], [a].[Id]
+2026-02-09 21:22:50.706 +02:00 [INF] Executed action eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation) in 175.5795ms
+2026-02-09 21:22:50.708 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controllers.CartController.GetUserOrders (eCommerce.Presentation)'
+2026-02-09 21:22:50.709 +02:00 [ERR] Unknown Exception
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[eCommerce.Domain.Entities.Order, eCommerce.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[eCommerce.Application.DTOs.OrderDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Order -> OrderDto
+eCommerce.Domain.Entities.Order -> eCommerce.Application.DTOs.OrderDto
+   at lambda_method430(Closure, Order, OrderDto, ResolutionContext)
+   at lambda_method429(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method429(Closure, Object, IEnumerable`1, ResolutionContext)
+   at eCommerce.Application.Services.Implementations.Cart.CartService.GetUserOrdersAsync(String userId) in E:\eCommerce\eCommerce.Application\Services\Implementations\Cart\CartService.cs:line 176
+   at eCommerce.Presentation.Controllers.CartController.GetUserOrders(String userId) in E:\eCommerce\eCommerce.Host\Controllers\CartController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at eCommerce.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in E:\eCommerce\eCommerce.Host\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-02-09 21:22:50.728 +02:00 [ERR] HTTP GET /api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 responded 500 in 208.4755 ms
+2026-02-09 21:22:50.730 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cart/orders/2b76a208-7eb3-4335-9439-9fa444bc68c1 - 500 null application/json 218.1586ms

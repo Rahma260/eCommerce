@@ -10,7 +10,8 @@ namespace eCommerce.Domain.Interfaces
      //   IGenericRepository<Cart> Carts { get; }
       //  IGenericRepository<CartItem> CartItems { get; }
         IGenericRepository<Checkout> Checkouts { get; }
-     //   IGenericRepository<OrderItem> OrderItems { get; }
+        IGenericRepository<OrderItem> OrderItems { get; }
+        IOrderRepository Orders { get; }
     //    IGenericRepository<Payment> Payments { get; }
         IUserRepository Users { get; }
         IGenericRepository<Role> Roles { get; }

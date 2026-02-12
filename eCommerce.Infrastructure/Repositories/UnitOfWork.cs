@@ -16,7 +16,8 @@ namespace eCommerce.Infrastructure.Repositories
  ///       public IGenericRepository<Cart> Carts { get; private set; }
       //  public IGenericRepository<CartItem> CartItems { get; private set; }
         public IGenericRepository<Checkout> Checkouts { get; private set; }
-       // public IGenericRepository<OrderItem> OrderItems { get; private set; }
+        public IGenericRepository<OrderItem> OrderItems { get; private set; }
+        public IOrderRepository Orders { get; private set; }
       //  public IGenericRepository<Payment> Payments { get; private set; }
         public IGenericRepository<PaymentMethod> PaymentMethods { get; private set; }
         public IUserRepository Users { get; private set; }
@@ -35,7 +36,8 @@ namespace eCommerce.Infrastructure.Repositories
          //   Carts = new GenericRepository<Cart>(_context);
          //   CartItems = new GenericRepository<CartItem>(_context);
             Checkouts = new GenericRepository<Checkout>(_context);
-           // OrderItems = new GenericRepository<OrderItem>(_context);
+            OrderItems = new GenericRepository<OrderItem>(_context);
+            Orders = new OrderRepository(_context);
            // Payments = new GenericRepository<Payment>(_context);
             Users = new UserRepository(_context);
             Roles = new GenericRepository<Role>(_context);

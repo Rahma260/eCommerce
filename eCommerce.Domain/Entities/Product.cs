@@ -10,16 +10,21 @@ namespace eCommerce.Domain.Entities
 {
     public class Product
     {
-        [Key]
         public int Id { get; set; }
-        public string? Name { get; set; }
+
+        public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public decimal? Price { get; set; }
-        public int? Quantity { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public Category? Category { get; set; }
+
+        public decimal Price { get; set; }
+        public int StockQuantity { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
         public int CategoryId { get; set; }
-        public Image? Image { get; set; }
+        public Category Category { get; set; } = null!;
+
         public int? ImageId { get; set; }
+        public Image? Image { get; set; }
     }
+
 }

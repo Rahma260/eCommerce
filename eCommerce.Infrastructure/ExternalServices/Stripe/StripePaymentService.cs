@@ -1,4 +1,5 @@
-﻿using eCommerce.Application.DTOs.Cart;
+﻿using eCommerce.Application.DTOs;
+using eCommerce.Application.DTOs.Cart;
 using eCommerce.Application.DTOs.Responses;
 using eCommerce.Application.Services.Interfaces.Cart;
 using eCommerce.Domain.Entities;
@@ -13,7 +14,7 @@ namespace eCommerce.Infrastructure.ExternalServices.Stripe
 {
     public class StripePaymentService : IPaymentService
     {
-        public async Task<ServiceResponse> Pay(decimal totalAmount, IEnumerable<Product> cartProducts, IEnumerable<ProcessCart> carts)
+        public async Task<ServiceResponse> Pay(decimal totalAmount, IEnumerable<Product> cartProducts, List<CartItemDto> carts)
         {
             try
             {

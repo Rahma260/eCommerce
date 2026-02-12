@@ -1,4 +1,5 @@
-﻿using eCommerce.Application.DTOs.Cart;
+﻿using eCommerce.Application.DTOs;
+using eCommerce.Application.DTOs.Cart;
 using eCommerce.Application.DTOs.Responses;
 using eCommerce.Domain.Entities;
 using System;
@@ -11,6 +12,6 @@ namespace eCommerce.Application.Services.Interfaces.Cart
 {
     public interface IPaymentService
     {
-        Task<ServiceResponse> Pay(decimal totalAmount, IEnumerable<Product> cartProducts, IEnumerable<ProcessCart> carts);
+        Task<ServiceResponse> Pay(decimal totalAmount, IEnumerable<Product> cartProducts, List<CartItemDto> items);
     }
 }
